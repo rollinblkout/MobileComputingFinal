@@ -17,11 +17,6 @@ public class Parrot extends Activity {
 		Intent i = new Intent(getApplicationContext(),CameraActivity.class);
 		startActivity(i);
 	}
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.parrot, menu);
-		return true;
-	}
+
 
 }
