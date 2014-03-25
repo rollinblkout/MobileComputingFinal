@@ -43,5 +43,32 @@
     <string name="title_activity_parakeet">Parakeet</string>
     <string name="title_activity_sheep">Sheep</string>
     <string name="title_activity_corn_snake">CornSnake</string>
+<string name="go">Go</string>
+        <string name="welcome">Welcome to the Animal Field Guide!</string>
+            <string name="animals">Animals</string>
+                <string name="spellgame">Spell Game</string>
+                <string name ="wiki">Images and information taken from Wikipedia</string>
+                <string name ="exit">Exit</string>
+                <string name="image">Image here</string>
+                <string name= "horse">Horse</string>
+                <string name="dog">Dog</string>
+                <string name="cat">Cat</string>
+                <string name="mouse">Mouse</string>
+                <string name="rat">Rat</string>
+                <string name="rabbit">Rabbit</string>
+                <string name="turtle">Turtle</string>
+                <string name="cornsnake">Corn Snake</string>
+                <string name="cow">Cow</string>
+                <string name="sheep">Sheep</string>
+                <string name="parakeet">Parakeet</string>
+                <string name="parrot">Parrot</string>
+                <string name="choose">Click to choose!</string>
+                <string name="reptiles">Reptiles</string>
+                <string name ="rodents">Rodents</string>
+                <string name="birds">Birds</string>
+                <string name="canines">Canines</string>
+                <string name="felines">Felines</string>
+                <string name="farmanimals">Farm Animals</string>
+                <string name="defaullt">Here we put the description for the dog. Like what the dog eats. Where the dog lives. What is interesting about the dog. Whatever else</string>
 
 </resources>

@@ -15,7 +15,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
-        android:text="Animals"
+        android:text="@string/animals"
         android:onClick="goToAnimalScreen"
         android:width="200dp" />
 
@@ -26,7 +26,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="19dp"
-        android:text="Spell Game"
+        android:text="@string/spellgame"
         android:width="200dp" />
 
     <Button
@@ -36,7 +36,7 @@
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="95dp"
-        android:text="Exit" />
+        android:text="@string/exit" />
 
     <TextView
         android:id="@+id/textView1"
@@ -45,6 +45,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
-        android:text="Welcome to the Animal Field Guide!" />
+        android:text="@string/welcome" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/wiki"
+        android:textSize="12sp" />
 
 </RelativeLayout>

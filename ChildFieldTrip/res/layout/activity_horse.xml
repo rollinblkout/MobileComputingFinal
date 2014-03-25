@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Horse"
+        android:text="@string/horse"
         android:textSize="30sp" />
 
     <ImageView
@@ -26,6 +26,7 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
+        android:contentDescription="@string/image"
         android:src="@drawable/horse" />
 
     <Button
@@ -44,7 +45,7 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:height="100dp"
-        android:text="Here we put the description for the dog. Like what the dog eats. Where the dog lives. What is interesting about the dog. Whatever else."
+        android:text="@string/defaullt"
         android:width="300dp" />
 
 
