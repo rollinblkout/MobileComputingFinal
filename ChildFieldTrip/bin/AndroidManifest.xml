@@ -30,6 +30,14 @@
             android:name="com.example.childfieldtrip.Domestic"
             android:label="@string/title_activity_domestic" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Dog"
+            android:label="@string/title_activity_dog" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
     </application>
 
 </manifest>
