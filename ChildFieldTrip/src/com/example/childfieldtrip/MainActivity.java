@@ -20,9 +20,9 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	public void goToAnimalScreen(View arg0) {
+	/*public void goToAnimalScreen(View arg0) {
 		Intent i = new Intent(getApplicationContext(),AnimalTitle.class);
 		startActivity(i);
 	}
-
+*/
 }
