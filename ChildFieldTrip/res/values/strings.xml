@@ -70,5 +70,9 @@
                 <string name="felines">Felines</string>
                 <string name="farmanimals">Farm Animals</string>
                 <string name="defaullt">Here we put the description for the dog. Like what the dog eats. Where the dog lives. What is interesting about the dog. Whatever else</string>
+                <string name="search">Search for an animal</string>
+                <string name="domestic">Domestic</string>
+                <string name="aquatic">Aquatic</string>
+                <string name="wild">Wild Animals</string>
 
 </resources>

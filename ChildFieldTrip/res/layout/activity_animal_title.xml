@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="112dp"
-        android:text="Domestic"
+        android:text="@string/domestic"
         android:width="200dp"
         android:onClick="goToDomesticScreen" />
 
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
-        android:text="Aquatic"
+        android:text="@string/aquatic"
         android:width="200dp" />
 
     <EditText
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:ems="10" 
-        android:hint="search for an animal">
+        android:hint="@string/search">
 
     </EditText>
 
@@ -47,7 +47,7 @@
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Go"
+        android:text="@string/go"
         android:onClick="search" />
 
     <Button
@@ -57,7 +57,7 @@
         android:layout_alignBottom="@+id/button1"
         android:layout_alignLeft="@+id/button1"
         android:layout_marginBottom="46dp"
-        android:text="Wild"
+        android:text="@string/wilf"
         android:width="200dp" />
 
     <TextView
@@ -67,7 +67,7 @@
         android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
-        android:text="Choose a catagory" />
+        android:text="@string/choose" />
 
 
 

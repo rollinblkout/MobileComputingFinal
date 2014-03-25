@@ -14,13 +14,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Turtle"
+        android:text="@string/turtle"
         android:textSize="30sp" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:contentDescription="@string/image"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
@@ -42,7 +43,7 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:height="100dp"
-        android:text="Here we put the description for the dog. Like what the dog eats. Where the dog lives. What is interesting about the dog. Whatever else."
+        android:text="@string/defaullt"
         android:width="300dp" />
 
 </RelativeLayout>
