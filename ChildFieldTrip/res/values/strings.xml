@@ -17,15 +17,20 @@
     <string-array name="farm">
         <item>Horse</item>
         <item>Cow</item>
+        <item>Sheep</item>
     </string-array>
     <string-array name="rep">
         <item>Turtle</item>
+        <item>Corn Snake</item>
     </string-array>
     <string-array name="rod">
         <item>Rabbit</item>
+        <item>Mouse</item>
+        <item>Rat</item>
     </string-array>
     <string-array name="bird">
         <item>Parrot</item>
+        <item>Parakeet</item>
     </string-array>
 
     <string name="title_activity_cow">Cow</string>
@@ -33,4 +38,10 @@
     <string name="title_activity_rabbit">Rabbit</string>
     <string name="title_activity_turtle">Turtle</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_mouse">Mouse</string>
+    <string name="title_activity_rat">Rat</string>
+    <string name="title_activity_parakeet">Parakeet</string>
+    <string name="title_activity_sheep">Sheep</string>
+    <string name="title_activity_corn_snake">CornSnake</string>
+
 </resources>
