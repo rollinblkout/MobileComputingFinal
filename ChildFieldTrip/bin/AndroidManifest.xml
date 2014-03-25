@@ -38,6 +38,10 @@
             android:name="com.example.childfieldtrip.CameraActivity"
             android:label="@string/title_activity_camera" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Cat"
+            android:label="@string/title_activity_cat" >
+        </activity>
     </application>
 
 </manifest>
