@@ -62,6 +62,22 @@
             android:name="com.example.childfieldtrip.FarmAnimals"
             android:label="@string/title_activity_farm_animals" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Cow"
+            android:label="@string/title_activity_cow" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Horse"
+            android:label="@string/title_activity_horse" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Birds"
+            android:label="@string/title_activity_birds" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Parrot"
+            android:label="@string/title_activity_parrot" >
+        </activity>
     </application>
 
 </manifest>
