@@ -38,7 +38,6 @@
         android:ems="10" 
         android:hint="search for an animal">
 
-        <requestFocus />
     </EditText>
 
     <Button
@@ -48,7 +47,8 @@
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="Go" />
+        android:text="Go"
+        android:onClick="search" />
 
     <Button
         android:id="@+id/button2"
