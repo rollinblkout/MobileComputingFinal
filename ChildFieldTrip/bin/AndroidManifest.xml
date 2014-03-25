@@ -42,6 +42,14 @@
             android:name="com.example.childfieldtrip.Cat"
             android:label="@string/title_activity_cat" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Reptiles"
+            android:label="@string/title_activity_reptiles" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Turtle"
+            android:label="@string/title_activity_turtle" >
+        </activity>
     </application>
 
 </manifest>
