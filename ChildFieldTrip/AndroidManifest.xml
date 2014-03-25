@@ -54,6 +54,10 @@
             android:name="com.example.childfieldtrip.Rodents"
             android:label="@string/title_activity_rodents" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Rabbit"
+            android:label="@string/title_activity_rabbit" >
+        </activity>
     </application>
 
 </manifest>
