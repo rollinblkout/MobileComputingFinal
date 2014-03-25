@@ -50,6 +50,10 @@
             android:name="com.example.childfieldtrip.Turtle"
             android:label="@string/title_activity_turtle" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Rodents"
+            android:label="@string/title_activity_rodents" >
+        </activity>
     </application>
 
 </manifest>
