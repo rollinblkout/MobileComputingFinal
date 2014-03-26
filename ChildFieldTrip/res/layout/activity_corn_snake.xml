@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/camera" />
+        android:background="@drawable/camera"
+        android:onClick="goToCamera" />
 
     <TextView
         android:id="@+id/textView2"
