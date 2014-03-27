@@ -62,6 +62,9 @@
         <item>none</item>
     </string-array>
 
+    <string name="pig">Pig</string>
+    <string name="guineapig">Guinea Pig</string>
+    <string name="hamster">Hamster</string>
     <string name="title_activity_cow">Cow</string>
     <string name="title_activity_parrot">Parrot</string>
     <string name="title_activity_rabbit">Rabbit</string>
