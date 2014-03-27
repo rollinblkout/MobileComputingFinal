@@ -15,24 +15,43 @@
     <string name="title_activity_horse">Horse</string>
 
     <string-array name="farm">
+                <item>Cow</item>
         <item>Horse</item>
-        <item>Cow</item>
+        <item>Pig</item>
         <item>Sheep</item>
     </string-array>
     <string-array name="rep">
+                <item>Corn Snake</item>
         <item>Turtle</item>
-        <item>Corn Snake</item>
     </string-array>
     <string-array name="rod">
+        <item>Guinea Pig</item>
+        <item>Hamster</item>
+               <item>Mouse</item>
         <item>Rabbit</item>
-        <item>Mouse</item>
         <item>Rat</item>
     </string-array>
     <string-array name="bird">
+                <item>Parakeet</item>
         <item>Parrot</item>
-        <item>Parakeet</item>
     </string-array>
 
+    <string-array name="wildmamals">
+        <item>Bear</item>
+        <item>Deer</item>
+        <item>Elephant</item>
+        <item>Gazelle</item>
+        <item>Giraffe</item>
+        <item>Hippo</item>
+        <item>Zebra</item>
+    </string-array>
+    
+    <string-array name="wildfelines">
+        <item>Cheetah</item>
+        <item>Lion</item>
+        <item>Tiger</item>
+    </string-array>
+    
     <string name="title_activity_cow">Cow</string>
     <string name="title_activity_parrot">Parrot</string>
     <string name="title_activity_rabbit">Rabbit</string>
