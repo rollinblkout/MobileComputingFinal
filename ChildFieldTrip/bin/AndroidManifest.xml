@@ -138,6 +138,46 @@
             android:name="com.example.childfieldtrip.Hippo"
             android:label="@string/title_activity_hippo" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.WildAnimals"
+            android:label="@string/title_activity_wild_animals" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.OtherMammals"
+            android:label="@string/title_activity_other_mammals" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Canines"
+            android:label="@string/title_activity_canines" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Felines"
+            android:label="@string/title_activity_felines" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.WildRodents"
+            android:label="@string/title_activity_wild_rodents" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.WildReptiles"
+            android:label="@string/title_activity_wild_reptiles" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.WildBirds"
+            android:label="@string/title_activity_wild_birds" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Hamster"
+            android:label="@string/title_activity_hamster" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Pig"
+            android:label="@string/title_activity_pig" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Guineapig"
+            android:label="@string/title_activity_guineapig" >
+        </activity>
     </application>
 
 </manifest>

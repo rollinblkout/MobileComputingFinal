@@ -15,27 +15,26 @@
     <string name="title_activity_horse">Horse</string>
 
     <string-array name="farm">
-                <item>Cow</item>
+        <item>Cow</item>
         <item>Horse</item>
         <item>Pig</item>
         <item>Sheep</item>
     </string-array>
     <string-array name="rep">
-                <item>Corn Snake</item>
+        <item>Corn Snake</item>
         <item>Turtle</item>
     </string-array>
     <string-array name="rod">
         <item>Guinea Pig</item>
         <item>Hamster</item>
-               <item>Mouse</item>
+        <item>Mouse</item>
         <item>Rabbit</item>
         <item>Rat</item>
     </string-array>
     <string-array name="bird">
-                <item>Parakeet</item>
+        <item>Parakeet</item>
         <item>Parrot</item>
     </string-array>
-
     <string-array name="wildmamals">
         <item>Bear</item>
         <item>Deer</item>
@@ -45,13 +44,24 @@
         <item>Hippo</item>
         <item>Zebra</item>
     </string-array>
-    
     <string-array name="wildfelines">
         <item>Cheetah</item>
         <item>Lion</item>
         <item>Tiger</item>
     </string-array>
-    
+    <string-array name="wildrodents">
+        <item>none</item>
+    </string-array>
+    <string-array name="wildreptiles">
+        <item>none</item>
+    </string-array>
+    <string-array name="wildbirds">
+        <item>none</item>
+    </string-array>
+    <string-array name="wildcanines">
+        <item>none</item>
+    </string-array>
+
     <string name="title_activity_cow">Cow</string>
     <string name="title_activity_parrot">Parrot</string>
     <string name="title_activity_rabbit">Rabbit</string>
@@ -123,5 +133,16 @@
     <string name="title_activity_hippo">Hippo</string>
     <string name="hippo">Hippo</string>
     <string name="hippo_desc">Hippos are recognizable by their barrel-shaped torsos, enormous mouths and teeth, nearly hairless bodies, stubby legs and tremendous size. They are the third-largest type of land mammal by weight (between 1½ and 3 tonnes).</string>
+    <string name="title_activity_wild_animals">WildAnimals</string>
+    <string name="mammalso">Other Mammals</string>
+    <string name="title_activity_other_mammals">OtherMammals</string>
+    <string name="title_activity_canines">Canines</string>
+    <string name="title_activity_felines">Felines</string>
+    <string name="title_activity_wild_rodents">WildRodents</string>
+    <string name="title_activity_wild_reptiles">WildReptiles</string>
+    <string name="title_activity_wild_birds">WildBirds</string>
+    <string name="title_activity_hamster">Hamster</string>
+    <string name="title_activity_pig">Pig</string>
+    <string name="title_activity_guineapig">Guineapig</string>
 
 </resources>

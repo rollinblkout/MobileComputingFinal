@@ -24,7 +24,7 @@ public class Rodents extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Rabbit", "Mouse","Rat"};
+				String[] items = { "Guinea Pig", "Hamster","Mouse", "Rabbit","Rat"};
 				if (items[position].equals("Rabbit")){
 					
 						Intent i = new Intent(getApplicationContext(),Rabbit.class);
@@ -42,6 +42,18 @@ public class Rodents extends Activity{
 					Intent i = new Intent(getApplicationContext(),Rat.class);
 					startActivity(i);
 			}
+				
+	if (items[position].equals("Guinea Pig")){
+					
+					Intent i = new Intent(getApplicationContext(),Guineapig.class);
+					startActivity(i);
+			}
+	
+	if (items[position].equals("Hamster")){
+		
+		Intent i = new Intent(getApplicationContext(),Hamster.class);
+		startActivity(i);
+}
 					
 			}
 		});

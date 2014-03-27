@@ -59,6 +59,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_marginBottom="46dp"
         android:text="@string/wild"
+        android:onClick="goToWildAnimalScreen"
         android:width="200dp" />
 
     <TextView

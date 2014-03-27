@@ -69,8 +69,132 @@ public class AnimalTitle extends Activity {
 		{
 			 Intent i = new Intent(getApplicationContext(),Turtle.class);
 			  startActivity(i);
-		} else {
+		} else{
+			if (animal.equalsIgnoreCase("pig"))
+			{
+				 Intent i = new Intent(getApplicationContext(),Pig.class);
+				  startActivity(i);
+			}else {
+				if (animal.equalsIgnoreCase("guinea pig"))
+				{
+					 Intent i = new Intent(getApplicationContext(),Guineapig.class);
+					  startActivity(i);
+				} else{if (animal.equalsIgnoreCase("corn snake"))
+				{
+					 Intent i = new Intent(getApplicationContext(),CornSnake.class);
+					  startActivity(i);
+				} else{
+					if (animal.equalsIgnoreCase("hamster"))
+					{
+						 Intent i = new Intent(getApplicationContext(),Hamster.class);
+						  startActivity(i);
+					
+				} else {
+					
+					if (animal.equalsIgnoreCase("rat"))
+					{
+						 Intent i = new Intent(getApplicationContext(),Rat.class);
+						  startActivity(i);
+					} else{
+						
+						if (animal.equalsIgnoreCase("mouse"))
+						{
+							 Intent i = new Intent(getApplicationContext(),Mouse.class);
+							  startActivity(i);
+						} else {
+							
+							if (animal.equalsIgnoreCase("parakeet"))
+							{
+								 Intent i = new Intent(getApplicationContext(),Parakeet.class);
+								  startActivity(i);
+							} else {
+								
+								if (animal.equalsIgnoreCase("sheep"))
+								{
+									 Intent i = new Intent(getApplicationContext(),Sheep.class);
+									  startActivity(i);
+								} else {
+									if (animal.equalsIgnoreCase("tiger"))
+									{
+										 Intent i = new Intent(getApplicationContext(),Tiger.class);
+										  startActivity(i);
+									} else {
+										
+										if (animal.equalsIgnoreCase("lion"))
+										{
+											 Intent i = new Intent(getApplicationContext(),Lion.class);
+											  startActivity(i);
+										}
+										else {
+											
+											if (animal.equalsIgnoreCase("cheetah"))
+											{
+												 Intent i = new Intent(getApplicationContext(),Cheetah.class);
+												  startActivity(i);
+											} else {
+												
+												if (animal.equalsIgnoreCase("bear"))
+												{
+													 Intent i = new Intent(getApplicationContext(),Bear.class);
+													  startActivity(i);
+												} else {
+													
+													if (animal.equalsIgnoreCase("deer"))
+													{
+														 Intent i = new Intent(getApplicationContext(),Deer.class);
+														  startActivity(i);
+													} else
+													{
+														
+														if (animal.equalsIgnoreCase("elephant"))
+														{
+															 Intent i = new Intent(getApplicationContext(),Elephant.class);
+															  startActivity(i);
+														} else {
+															
+															if (animal.equalsIgnoreCase("Gazelle"))
+															{
+																 Intent i = new Intent(getApplicationContext(),Gazelle.class);
+																  startActivity(i);
+															} else {
+																
+																if (animal.equalsIgnoreCase("giraffe"))
+																{
+																	 Intent i = new Intent(getApplicationContext(),Giraffe.class);
+																	  startActivity(i);
+																} else {
+																	if (animal.equalsIgnoreCase("hippo"))
+																	{
+																		 Intent i = new Intent(getApplicationContext(),Hippo.class);
+																		  startActivity(i);
+																	
+																} else {
+																	if (animal.equalsIgnoreCase("zebra"))
+																	{
+																		 Intent i = new Intent(getApplicationContext(),Zebra.class);
+																		  startActivity(i);
+																	
+																}else {
+	
 			Toast.makeText(getApplicationContext(),"Oops! " + animal + " is not in the database!", Toast.LENGTH_SHORT).show();
+		}
+		}
+		}
+		}
+		}
+		}
+		}
+								}
+							}
+						}
+					}
+				}
+				}
+				}
+			}
+		}
+		}
+		}
 		}
 		}
 		}
@@ -83,4 +207,8 @@ public class AnimalTitle extends Activity {
   Intent i = new Intent(getApplicationContext(),Domestic.class);
   startActivity(i);
  }
+ public void goToWildAnimalScreen(View arg0) {
+	  Intent i = new Intent(getApplicationContext(),WildAnimals.class);
+	  startActivity(i);
+	 }
 }

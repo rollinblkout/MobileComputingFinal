@@ -24,7 +24,7 @@ public class Reptiles extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Turtle", "Corn Snake"};
+				String[] items = { "Corn Snake","Turtle"};
 				if (items[position].equals("Turtle")){
 					
 						Intent i = new Intent(getApplicationContext(),Turtle.class);

@@ -24,7 +24,7 @@ public class FarmAnimals extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Horse","Cow","Sheep"};
+				String[] items = { "Cow","Horse", "Pig","Sheep"};
 				if (items[position].equals("Horse")){
 					
 						Intent i = new Intent(getApplicationContext(),Horse.class);
@@ -40,7 +40,11 @@ public class FarmAnimals extends Activity{
 					Intent i = new Intent(getApplicationContext(),Sheep.class);
 					startActivity(i);
 			}
+	if (items[position].equals("Pig")){
 					
+					Intent i = new Intent(getApplicationContext(),Pig.class);
+					startActivity(i);
+			}
 			}
 		});
 			}

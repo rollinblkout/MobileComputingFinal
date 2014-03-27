@@ -24,7 +24,7 @@ public class Birds extends Activity{
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Parrot", "Parakeet"};
+				String[] items = { "Parakeet", "Parrot"};
 				if (items[position].equals("Parrot")){
 					
 						Intent i = new Intent(getApplicationContext(),Parrot.class);
