@@ -98,6 +98,46 @@
             android:name="com.example.childfieldtrip.CornSnake"
             android:label="@string/title_activity_corn_snake" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Tiger"
+            android:label="@string/title_activity_tiger" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Cheetah"
+            android:label="@string/title_activity_cheetah" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Lion"
+            android:label="@string/title_activity_lion" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Zebra"
+            android:label="@string/title_activity_zebra" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Deer"
+            android:label="@string/title_activity_deer" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Giraffe"
+            android:label="@string/title_activity_giraffe" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Bear"
+            android:label="@string/title_activity_bear" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Gazelle"
+            android:label="@string/title_activity_gazelle" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Elephant"
+            android:label="@string/title_activity_elephant" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Hippo"
+            android:label="@string/title_activity_hippo" >
+        </activity>
     </application>
 
 </manifest>
