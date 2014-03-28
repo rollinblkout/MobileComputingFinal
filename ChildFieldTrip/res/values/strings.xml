@@ -147,5 +147,18 @@
     <string name="title_activity_hamster">Hamster</string>
     <string name="title_activity_pig">Pig</string>
     <string name="title_activity_guineapig">Guineapig</string>
+    <string name="title_activity_alligator">Alligator</string>
+    <string name="alligator">Alligator</string>
+    <string name="alligator_desc">An alligator is a crocodilian in the genus Alligator of the family Alligatoridae. The two living species are the American alligator (A. mississippiensis) and the Chinese alligator (A. sinensis).</string>
+    <string name="title_activity_meerkat">Meerkat</string>
+    <string name="meerkat">Meerkat</string>
+    <string name="meerkat_desc">The meerkat or suricate, Suricata suricatta, is a small mammal belonging to the mongoose family. Meerkats live in all parts of the Kalahari Desert in Botswana, in much of the Namib Desert in Namibia and southwestern Angola,</string>
+    <string name="title_activity_penguin">Penguin</string>
+    <string name="penguin">Penguin</string>
+    <string name="penguin_desc">Penguins (order Sphenisciformes, family Spheniscidae) are a group of aquatic, flightless birds living almost exclusively in the Southern Hemisphere, especially in Antarctica.</string>
+    <string name="title_activity_wolf">Wolf</string>
+    <string name="wolf">Wolf</string>
+    <string name="wolf_desc">The gray wolf or grey wolf (Canis lupus) is a canid native to the wilderness and remote areas of North America, Eurasia, and North Africa. It is the largest member of its family, with males averaging 43–45 kg (95–99 lb),</string>
+    
 
 </resources>

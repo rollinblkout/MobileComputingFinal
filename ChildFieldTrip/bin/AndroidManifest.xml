@@ -178,6 +178,22 @@
             android:name="com.example.childfieldtrip.Guineapig"
             android:label="@string/title_activity_guineapig" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Alligator"
+            android:label="@string/title_activity_alligator" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Meerkat"
+            android:label="@string/title_activity_meerkat" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Penguin"
+            android:label="@string/title_activity_penguin" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Wolf"
+            android:label="@string/title_activity_wolf" >
+        </activity>
     </application>
 
 </manifest>
