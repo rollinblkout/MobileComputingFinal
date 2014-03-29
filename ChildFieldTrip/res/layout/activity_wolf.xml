@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Wolf" >
 
+
  <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -45,5 +46,4 @@
         android:height="100dp"
         android:text="@string/wolf_desc"
         android:width="300dp" />
-
 </RelativeLayout>

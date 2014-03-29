@@ -50,16 +50,16 @@
         <item>Tiger</item>
     </string-array>
     <string-array name="wildrodents">
-        <item>none</item>
+        <item>Meerkat</item>
     </string-array>
     <string-array name="wildreptiles">
-        <item>none</item>
+        <item>Alligator</item>
     </string-array>
     <string-array name="wildbirds">
-        <item>none</item>
+        <item>Penguin</item>
     </string-array>
     <string-array name="wildcanines">
-        <item>none</item>
+        <item>Wolf</item>
     </string-array>
 
     <string name="pig">Pig</string>

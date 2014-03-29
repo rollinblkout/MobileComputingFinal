@@ -175,6 +175,32 @@ public class AnimalTitle extends Activity {
 																		  startActivity(i);
 																	
 																}else {
+																	if (animal.equalsIgnoreCase("wolf"))
+																	{
+																		 Intent i = new Intent(getApplicationContext(),Wolf.class);
+																		  startActivity(i);
+																	} else {
+																		
+																		if (animal.equalsIgnoreCase("meerkat"))
+																		{
+																			 Intent i = new Intent(getApplicationContext(),Meerkat.class);
+																			  startActivity(i);
+																	} else {
+																		if (animal.equalsIgnoreCase("penguin"))
+																		{
+																			 Intent i = new Intent(getApplicationContext(),Penguin.class);
+																			  startActivity(i);
+																		} else{ 
+																			if (animal.equalsIgnoreCase("alligator"))
+																			{
+																				 Intent i = new Intent(getApplicationContext(),Alligator.class);
+																				  startActivity(i);
+																			}
+																		
+																			else {
+																	
+																	
+																
 	
 			Toast.makeText(getApplicationContext(),"Oops! " + animal + " is not in the database!", Toast.LENGTH_SHORT).show();
 		}
@@ -192,6 +218,10 @@ public class AnimalTitle extends Activity {
 				}
 				}
 			}
+		}
+		}
+		}
+		}
 		}
 		}
 		}
