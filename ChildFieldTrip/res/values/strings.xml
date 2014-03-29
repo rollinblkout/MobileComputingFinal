@@ -159,6 +159,8 @@
     <string name="title_activity_wolf">Wolf</string>
     <string name="wolf">Wolf</string>
     <string name="wolf_desc">The gray wolf or grey wolf (Canis lupus) is a canid native to the wilderness and remote areas of North America, Eurasia, and North Africa. It is the largest member of its family, with males averaging 43–45 kg (95–99 lb),</string>
-    
+    <string name="facts">Facts</string>
+    <string name="definitions">Definitions</string>
+    <string name="title_activity_database_manager">DatabaseManager</string>
 
 </resources>

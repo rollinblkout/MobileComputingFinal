@@ -26,4 +26,8 @@ public class MainActivity extends Activity {
   Intent i = new Intent(getApplicationContext(),AnimalTitle.class);
   startActivity(i);
  }
+ 
+ public void exit(View arg0) {
+	 System.exit(0);
+	 }
 }

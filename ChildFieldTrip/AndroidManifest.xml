@@ -194,6 +194,10 @@
             android:name="com.example.childfieldtrip.Wolf"
             android:label="@string/title_activity_wolf" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.DatabaseManager"
+            android:label="@string/title_activity_database_manager" >
+        </activity>
     </application>
 
 </manifest>
