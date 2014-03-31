@@ -40,6 +40,7 @@ public class AnimalTitle extends Activity {
 
 	 String animal = ((EditText)findViewById(R.id.editText1)).getText().toString().toLowerCase();
 	 String animal2 = ((EditText)findViewById(R.id.editText1)).getText().toString();
+	 animal = animal.replaceAll(" ", "");
 	 Scanner s = new Scanner(getAssets().open("animalsearch.txt"));
 	 List<String> list = new ArrayList<String>();
 
@@ -57,7 +58,7 @@ public class AnimalTitle extends Activity {
 		{
 			
 			String output = Character.toUpperCase(animal.charAt(0)) + animal.substring(1);
-			Toast.makeText(getApplicationContext(),"SUCCESS!" + output + "is in the database!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the database!", Toast.LENGTH_SHORT).show();
 		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
 
 			Intent i = new Intent(getApplicationContext(),clazz);

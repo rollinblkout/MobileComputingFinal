@@ -4,7 +4,7 @@ Birds
 Canines
 Cat
 Cheetah
-Corn snake
+Cornsnake
 Cow
 Deer
 Dog
@@ -12,7 +12,7 @@ Elephant
 Felines
 Gazelle
 Giraffe
-Guinea pig
+Guineapig
 Hamster
 Hippo
 Horse
