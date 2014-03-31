@@ -4,15 +4,15 @@ package com.example.childfieldtrip;
 
 
 import java.io.IOException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -35,7 +35,7 @@ public class AnimalTitle extends Activity {
   return true;
  }
  
- public void search(View arg0) throws IOException{
+ public void search(View arg0) throws IOException, ClassNotFoundException{
 	 
 
 	 String animal = ((EditText)findViewById(R.id.editText1)).getText().toString().toLowerCase();
@@ -55,9 +55,15 @@ public class AnimalTitle extends Activity {
 		s.close();
 		if (list.contains(animal))
 		{
-			Toast.makeText(getApplicationContext(),"SUCCESS! " + animal2 + " is in the database!", Toast.LENGTH_SHORT).show();
-			//Intent i = new Inten(getApplicationContext(),animal.class);
-			//startActivity(i);
+			
+			String output = Character.toUpperCase(animal.charAt(0)) + animal.substring(1);
+			Toast.makeText(getApplicationContext(),"SUCCESS!" + output + "is in the database!", Toast.LENGTH_SHORT).show();
+		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
+
+			Intent i = new Intent(getApplicationContext(),clazz);
+
+		startActivity(i); 
+			
 		}
 		else
 		{
