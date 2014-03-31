@@ -45,5 +45,11 @@
         android:height="100dp"
         android:text="@string/deer_desc"
         android:width="300dp" />
-
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp" />
 </RelativeLayout>
