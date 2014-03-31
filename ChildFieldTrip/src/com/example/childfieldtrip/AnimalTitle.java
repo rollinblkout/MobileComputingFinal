@@ -1,21 +1,25 @@
 package com.example.childfieldtrip;
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
+
+
+import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
+@SuppressLint("DefaultLocale")
 public class AnimalTitle extends Activity {
 
  @Override
@@ -31,25 +35,33 @@ public class AnimalTitle extends Activity {
   return true;
  }
  
- public void search(View arg0) throws FileNotFoundException{
+ public void search(View arg0) throws IOException{
 	 
-	 String animal = ((EditText)findViewById(R.id.textView1)).getText().toString();
-	 Scanner s = new Scanner(new File("animalsearch.txt"));
+
+	 String animal = ((EditText)findViewById(R.id.editText1)).getText().toString().toLowerCase();
+	 String animal2 = ((EditText)findViewById(R.id.editText1)).getText().toString();
+	 Scanner s = new Scanner(getAssets().open("animalsearch.txt"));
 	 List<String> list = new ArrayList<String>();
+
+
+	 String t = null;
 	 while(s.hasNextLine())
 		{
-			list.add(s.nextLine());
+		 t = s.nextLine().toLowerCase();
+			list.add(t);
+
+
 		}
 		s.close();
 		if (list.contains(animal))
 		{
-			Toast.makeText(getApplicationContext(),"SUCCESS! " + animal + " is in the database!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"SUCCESS! " + animal2 + " is in the database!", Toast.LENGTH_SHORT).show();
 			//Intent i = new Inten(getApplicationContext(),animal.class);
 			//startActivity(i);
 		}
 		else
 		{
-			Toast.makeText(getApplicationContext(),"Oops! " + animal + " is not in the database!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the database!", Toast.LENGTH_SHORT).show();
 		}
 	}
  
