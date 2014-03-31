@@ -44,7 +44,9 @@
         android:layout_centerHorizontal="true"
         android:height="100dp"
         android:text="@string/gazelle_desc"
+        android:textSize="12sp"
         android:width="300dp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"

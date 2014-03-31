@@ -44,8 +44,10 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:height="100dp"
-        android:text="@string/defaullt"
+        android:text="@string/parrotinfo"
+        android:textSize="12sp"
         android:width="300dp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"

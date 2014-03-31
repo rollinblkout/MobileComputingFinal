@@ -159,8 +159,24 @@
     <string name="title_activity_wolf">Wolf</string>
     <string name="wolf">Wolf</string>
     <string name="wolf_desc">The gray wolf or grey wolf (Canis lupus) is a canid native to the wilderness and remote areas of North America, Eurasia, and North Africa. It is the largest member of its family, with males averaging 43–45 kg (95–99 lb),</string>
+    <string name="deerinfo">Deer is both singular and plural way to refer to deers. They are also mmals and come from the Cervidae family. The males have antlers. They live in tundras to tropical forests. They are also herbivores.</string>
     <string name="facts">Facts</string>
     <string name="definitions">Definitions</string>
     <string name="title_activity_database_manager">DatabaseManager</string>
+<string name="catinfo">Cats are carniorous mammals. They are kept as indoor pets. They are valued by people for hunting vermin and being companions. They have quick reflexes, sharp claws, and are flexible.</string>
+<string name="cornsnakeinfo">Corn snakes are a popular breed of snake to keep as pets. They are carnivorous and eat  small rodents. Sometimes they may even eat smaller reptiles or unguarded bird eggs in the wild. They are found in the southeastern and central United States. </string>
+<string name="cowinfo">Cow are also called cattle. They are raised to be dairy animals for milk, or livestock for meat,. They were domesticated from southeast Turkey and there are about 1.3 billion of them in the world today.</string>
+<string name="doginfo">They are mammals part of the Canidae family and are subspecies of gray wolves. They were the first animal to be domesticated. They arenow used mostly as pets but were formally mostly domesticated for safety.</string>
+<string name="guineainfo">They are not in the pig family, but are actually rodents. They came from Andes. These animals are pets that were introduced by European traders to WEstern societies.  They eat vegitation. </string>
+<string name="hamsterinfo">Hamsters are mostly active during the night so they can avoid predators. Their diets may consist of seeds, vegetation, fruits and sometimes even insects. Their cheek pouches reach their shoulders so they can carry food to their homes. </string>
+<string name="horseinfo"> Horses are one of two subspecies of equus ferus. They are mammals that have evolved from around 50 million ears from being small multi-toed creatures into what they are today. They were domesticated around 4000 BC. They are used in many human activities such as police work, sports, agriculture, and riding. They are herbivores. </string>
+<string name="mouseinfo">Mice are small mammals. They are largely herbivores that eat grains. They are nocturnal animals. As well as being popular pets they are used as test subjects in labatories.</string>
+<string name="parakeetinfo">They are a subspecies of parrot. The ringnecked parakeet is the type native to Africa and Asia. This species is popular as a pet. </string>
+<string name="parrotinfo">Parrots are found in tropical and subtropical regions. They are divided into three superfamilies: true parrots, New Zealand parrots, and cockatoos.  South America and Australasia have the greatest diversity of parrots. Their diets consists of seeds, fruit, nuts, buds, and other parts of plants. A few eat animals.</string>
+<string name="piginfo">Pigs ancestors are the common Eurasian wild boar. Baby pigs are called piglets. They are omnivores and like to be social.  They are commonly raised on farms for pork, ham, and even leather. </string>
+<string name="rabbitinfo">Rabbits are mammals and found in many places over the world. A male rabbit is refered to as a buck while the female as a doe. However a baby rabbit is called a kitten.  They live in meadows, woods, deserts, and grasslands. They are most active dawn and dusk and are herbivores. </string>
+<string name="ratinfo">Rats are often considered pests. However they have an ability to learn and are often kept as pets. They are often used in labatories.</string>
+<string name="sheepinfo">They are licestock mammals. They likely descended from mouflon in Europe and Asia. They are raised for meat, milk, and fleece. Their wool is the most used animal fiber.</string>
+<string name="turtleinfo">Turtles have a bony(cartilaginous) shell that is formed from their ribs. This shell acts like a protective sheild. They are amniotes, which means they breathe air, and do not go underwater to lay eggs, but live around water.  They feed on aquatic plants and sometimes insects. </string>
 
 </resources>
