@@ -58,12 +58,24 @@ public class AnimalTitle extends Activity {
 		{
 			
 			String output = Character.toUpperCase(animal.charAt(0)) + animal.substring(1);
+			
+			
+			if ( output.equals("Cornsnake"))
+			{
+				Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the database!", Toast.LENGTH_SHORT).show();
+				Intent ti = new Intent(getApplicationContext(),CornSnake.class);
+				startActivity(ti); 
+			} 
+			
+			if (!(output.equals("Cornsnake"))){
 			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the database!", Toast.LENGTH_SHORT).show();
+			
 		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
 
 			Intent i = new Intent(getApplicationContext(),clazz);
 
 		startActivity(i); 
+			}
 			
 		}
 		else
