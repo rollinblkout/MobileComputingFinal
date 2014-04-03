@@ -7,12 +7,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -26,6 +26,17 @@ public class AnimalTitle extends Activity {
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_animal_title);
+  Drawable a = findViewById(R.id.button1).getBackground();
+  Drawable b = findViewById(R.id.button2).getBackground();
+  Drawable c = findViewById(R.id.button3).getBackground();
+  Drawable d = findViewById(R.id.button4).getBackground();
+
+  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+  c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+  d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+
+  
  }
 
  @Override
