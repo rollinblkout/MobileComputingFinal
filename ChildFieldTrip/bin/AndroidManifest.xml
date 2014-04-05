@@ -198,6 +198,10 @@
             android:name="com.example.childfieldtrip.DatabaseManager"
             android:label="@string/title_activity_database_manager" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.SpellGame"
+            android:label="@string/title_activity_spell_game" >
+        </activity>
     </application>
 
 </manifest>

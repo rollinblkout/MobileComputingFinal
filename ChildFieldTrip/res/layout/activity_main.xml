@@ -80,6 +80,7 @@
         android:layout_alignLeft="@+id/button5"
         android:layout_below="@+id/button5"
         android:text="@string/spellgame"
+        android:onClick="goToSpellGame"
         android:width="200dp" />
 
 </RelativeLayout>
