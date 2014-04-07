@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -46,12 +47,7 @@ public class GuessImage extends Activity {
 			e.printStackTrace();
 		}
 		
-		next();
-	
-		//TextView t = new TextView(this);
-		//t=(TextView)findViewById(R.id.textView1);
-		//t.setText(animal);
-		
+		next();	
 		check.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -80,14 +76,21 @@ public class GuessImage extends Activity {
 	public void next(){
 		final TextView correct=(TextView) findViewById(R.id.textView2);
 		final TextView incorrect= (TextView) findViewById(R.id.textView3);
-		ImageView picture = (ImageView) findViewById(R.id.imageView1);
 		correct.setVisibility(View.INVISIBLE);
 		incorrect.setVisibility(View.INVISIBLE);
 		Random randomnum = new Random();
 		int rn=randomnum.nextInt(animalsAL.size());
 		animal=animalsAL.get(rn);
-		String tempLoc="R.id." + animal;
-		//picture.(tempLoc);
+		
+		
+		ImageView picture = (ImageView) findViewById(R.id.imageView1);
+		int id = getResources().getIdentifier(animal, "drawable", GuessImage.this.getPackageName());
+		if(id!=0){
+			picture.setImageResource(id);
+		}
+		else{
+			next();
+		}
 		Log.d("ADebugTag", "Value: " + animal);
 	}
 	@Override
