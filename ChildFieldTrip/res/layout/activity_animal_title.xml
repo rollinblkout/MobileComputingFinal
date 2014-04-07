@@ -28,6 +28,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:text="@string/aquatic"
+        android:onClick="goToAquatic"
         android:textColor="#0000FF"
         android:width="200dp" />
 

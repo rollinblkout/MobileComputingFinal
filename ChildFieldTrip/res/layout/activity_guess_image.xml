@@ -38,28 +38,6 @@
         android:layout_marginRight="52dp"
         android:textColor="#0000FF"
         android:text="Next" />
- 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="63dp"
-        android:textColor="#00FF00"
-        android:ems="10" >
-
-        <requestFocus /> 
-    </EditText>
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="58dp"
-        android:src="@android:drawable/sym_def_app_icon" />
 
     <TextView
         android:id="@+id/textView3"
@@ -80,5 +58,23 @@
         android:textColor="#00FF00"
         android:text="Correct"
         android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:textColor="#00FF00" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:src="@android:drawable/sym_def_app_icon" />
 
 </RelativeLayout>

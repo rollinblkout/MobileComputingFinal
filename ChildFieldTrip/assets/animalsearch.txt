@@ -8,8 +8,10 @@ Cornsnake
 Cow
 Deer
 Dog
+Dolphin
 Elephant
 Felines
+Frog
 Gazelle
 Giraffe
 Guineapig
@@ -27,6 +29,7 @@ Rabbit
 Rat
 Reptiles
 Rodents
+Salmon
 Sheep
 Tiger
 Turtle

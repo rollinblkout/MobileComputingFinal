@@ -94,7 +94,11 @@ public class AnimalTitle extends Activity {
 			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the database!", Toast.LENGTH_SHORT).show();
 		}
 	}
- 
+ public void goToAquatic(View arg0) {
+		
+	  Intent i = new Intent(getApplicationContext(),Aquatic.class);
+	  startActivity(i);
+	 }
  public void goToDomesticScreen(View arg0) {
   Intent i = new Intent(getApplicationContext(),Domestic.class);
   startActivity(i);

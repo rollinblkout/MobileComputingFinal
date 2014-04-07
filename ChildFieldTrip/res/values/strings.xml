@@ -20,6 +20,15 @@
         <item>Pig</item>
         <item>Sheep</item>
     </string-array>
+    <string-array name="amp">
+        <item>Frog</item>
+    </string-array>
+    <string-array name="freshlv">
+        <item>Salmon</item>
+    </string-array>
+    <string-array name="sealv">
+        <item>Dolphin</item>
+    </string-array>
     <string-array name="rep">
         <item>Corn Snake</item>
         <item>Turtle</item>
@@ -181,5 +190,21 @@
     <string name="title_activity_spell_game">SpellGame</string>
     <string name="title_activity_image_guess">ImageGuess</string>
     <string name="title_activity_guess_image">GuessImage</string>
+    <string name="title_activity_frog">Frog</string>
+    <string name="frog">Frog</string>
+    <string name="froginfo">Frogs are short-bodied and tailless. They evolve from a stage called tadpole. When they are tadpoles they are mostly herbivors but once they evolve they are carnivores. They used their cleft tongue to catch flies.</string>
+    <string name="title_activity_aquatic">Aquatic</string>
+    <string name="fresh">Fresh Water</string>
+    <string name="amphibian">Amphibian</string>
+    <string name="sea">Sea Water</string>
+    <string name="title_activity_amphibian">Amphibian</string>
+    <string name="title_activity_fresh_water">FreshWater</string>
+    <string name="title_activity_salmon">Salmon</string>
+    <string name="salmon">Salmon</string>
+    <string name="dolphin">Dolphin</string>
+    <string name="salmoninfo">Salmon are born  anadromous, which means they are born in the water. They then migrate to the ocean and only return  to fresh water to reproduce.  </string>
+    <string name="title_activity_sea_water">SeaWater</string>
+    <string name="title_activity_dolphin">Dolphin</string>
+    <string name="dolphininfo">Dolphins are mammals that are closely related to whales. They eat squid and fish. They are thought of as most intelligent animal and are highly social.</string>
 
 </resources>

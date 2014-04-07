@@ -7,7 +7,10 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
-
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="true" />
+ 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -209,6 +212,34 @@
         <activity
             android:name="com.example.childfieldtrip.GuessImage"
             android:label="@string/title_activity_guess_image" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Frog"
+            android:label="@string/title_activity_frog" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Aquatic"
+            android:label="@string/title_activity_aquatic" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Amphibian"
+            android:label="@string/title_activity_amphibian" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.FreshWater"
+            android:label="@string/title_activity_fresh_water" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Salmon"
+            android:label="@string/title_activity_salmon" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.SeaWater"
+            android:label="@string/title_activity_sea_water" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Dolphin"
+            android:label="@string/title_activity_dolphin" >
         </activity>
     </application>
 
