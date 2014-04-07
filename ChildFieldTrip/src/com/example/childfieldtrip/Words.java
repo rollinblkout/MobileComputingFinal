@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import android.app.Activity;
 
-public class Words extends Activity{
+public class Words extends Activity {
 	List<String> animalsAL = new ArrayList<String>();
 	
 	int testnum=0;
@@ -18,7 +18,7 @@ public class Words extends Activity{
 		
 	}
 	public void fill(){
-	int count=0;
+	
 		try {
 			Scanner animalTxt= new Scanner(getAssets().open("animalsearch.txt"));
 			 String temp = null;
@@ -37,8 +37,8 @@ public class Words extends Activity{
 	public String getNewAnimal(){
 		Random randomnum = new Random();
 		int rn=randomnum.nextInt(animalsAL.size());
-		String animal="test";
-		//animal=animals[rn];
+		String animal="";
+		//animal=animalsAL[rn];
 		testnum=rn;
 		return animal;
 	}

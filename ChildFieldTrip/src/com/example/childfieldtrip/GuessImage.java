@@ -1,7 +1,10 @@
 package com.example.childfieldtrip;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -19,9 +22,29 @@ public class GuessImage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_guess_image);
 		ImageView picture = (ImageView) findViewById(R.id.imageView1);
-		//picture.setImage;
-		Words getAnimal = new Words();
 		
+		try {
+			Scanner animalTxt= new Scanner(getAssets().open("animalsearch.txt"));
+			 String temp = null;
+			 while(animalTxt.hasNextLine())
+				{
+				 temp = animalTxt.nextLine().toLowerCase();
+					animalsAL.add(temp);
+
+
+				}
+				animalTxt.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		Random randomnum = new Random();
+		int rn=randomnum.nextInt(animalsAL.size());
+		String animal="";
+		animal=animalsAL.get(rn);
+		
+
+		//picture.setImage;
 		//getAnimal.fill(); //create the list of animals to choose from
 		//TextView t = new TextView(this);
 		//t=(TextView)findViewById(R.id.textView1);
