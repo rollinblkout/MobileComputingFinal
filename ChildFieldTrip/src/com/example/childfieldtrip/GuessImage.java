@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.Menu;
@@ -25,7 +26,13 @@ public class GuessImage extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_guess_image);
-		//ImageView picture = (ImageView) findViewById(R.id.imageView1);
+		
+		  Drawable a = findViewById(R.id.button1).getBackground();
+		  Drawable b = findViewById(R.id.button2).getBackground();
+
+		  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+		  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+
 		final EditText guess = (EditText) findViewById(R.id.editText1);
 		final TextView correct=(TextView) findViewById(R.id.textView2);
 		final TextView incorrect= (TextView) findViewById(R.id.textView3);
@@ -89,6 +96,7 @@ public class GuessImage extends Activity {
 			picture.setImageResource(id);
 		}
 		else{
+			Log.d("ADebugTage","Target Image Not Found"+ 404);
 			next();
 		}
 		Log.d("ADebugTag", "Value: " + animal);
