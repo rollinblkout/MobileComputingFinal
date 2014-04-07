@@ -3,7 +3,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.LinearLayout;
 
 public class SpellGameDrawing extends View {
 Paint paint =new Paint();
@@ -16,15 +19,19 @@ final int lineLength=50; // sets the length of the line
 
 	public SpellGameDrawing(Context context) {
 		super(context);
+		setLayoutParams(new LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.FILL_PARENT));
 		paint.setColor(Color.BLACK);
 		// TODO Auto-generated constructor stub
+	}
+	public SpellGameDrawing(Context context, AttributeSet attrs){
+		super(context,attrs);
 	}
 	
 	protected void onDraw(Canvas canvas){
 		super.onDraw(canvas);
 		middlex=(canvas.getWidth())/2;
 		middley=(canvas.getHeight())/2;
-		canvas.drawText("My Bird", middlex, middley+50, paint);
+
 		
 		if(wordLength%2==0){
 			canvas.drawLine(middlex+5, middley, middlex+45, middley, paint); //establishes the middle line for offset

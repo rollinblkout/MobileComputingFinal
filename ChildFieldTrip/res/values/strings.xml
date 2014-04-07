@@ -179,5 +179,7 @@
     <string name="sheepinfo">They are licestock mammals. They likely descended from mouflon in Europe and Asia. They are raised for meat, milk, and fleece. Their wool is the most used animal fiber.</string>
     <string name="turtleinfo">Turtles have a bony(cartilaginous) shell that is formed from their ribs. This shell acts like a protective sheild. They are amniotes, which means they breathe air, and do not go underwater to lay eggs, but live around water.  They feed on aquatic plants and sometimes insects. </string>
     <string name="title_activity_spell_game">SpellGame</string>
+    <string name="title_activity_image_guess">ImageGuess</string>
+    <string name="title_activity_guess_image">GuessImage</string>
 
 </resources>

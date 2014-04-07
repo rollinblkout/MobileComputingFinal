@@ -40,10 +40,9 @@ public class MainActivity extends Activity {
   startActivity(i);
  }
  public void goToSpellGame(View arg0){
-	  Intent x = new Intent(getApplicationContext(),SpellGame.class);
+	  Intent x = new Intent(getApplicationContext(),GuessImage.class);
 	  startActivity(x);
  }
- 
  public void exit(View arg0) {
 	 System.exit(0);
 	 }

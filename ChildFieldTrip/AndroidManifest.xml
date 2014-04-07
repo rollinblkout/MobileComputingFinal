@@ -202,6 +202,14 @@
             android:name="com.example.childfieldtrip.SpellGame"
             android:label="@string/title_activity_spell_game" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.ImageGuess"
+            android:label="@string/title_activity_image_guess" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.GuessImage"
+            android:label="@string/title_activity_guess_image" >
+        </activity>
     </application>
 
 </manifest>
