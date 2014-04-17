@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -21,7 +22,8 @@ import android.widget.Toast;
 
 @SuppressLint("SimpleDateFormat")
 public class Horse extends Activity {
-	int CAMERA_ACTIVATE = 5; 
+	private int currentImage = 0;
+	private int numImages = 7;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,9 +52,19 @@ public class Horse extends Activity {
 	        public void goToCamera(View arg0)
 	        {
 	        	File directory = new File(Environment.getExternalStorageDirectory(), "horseimage.jpg");
+	        	File directory2 = new File(Environment.getExternalStorageDirectory(), "oldhorseimage.jpg");
 	        	if(directory.exists()){
+	        		if (directory2.exists()) {
+	        			directory2.delete();
+	        			File blah = new File(Environment.getExternalStorageDirectory(), "oldhorseimage.jpg");
+	        			directory.renameTo(blah);
+	        			directory.delete();
+	        		} else {
+	        			
+	        		directory.renameTo(directory2);
 	        		directory.delete();
-	        	}else {
+	        		
+	        	}}else {
 	        			try{
 	        				directory.createNewFile();
 	        			} catch (IOException e){
@@ -65,7 +77,59 @@ public class Horse extends Activity {
 	            startActivityForResult(Intent, 5);
 	        }
       
-	
+  public void onPictureClick(View v) {
+	        	
+		        Bitmap initial = null;
+
+		        	
+		    	    File stuff = Environment.getExternalStorageDirectory();
+		    	    
+		    	    File thing = new File (stuff.getAbsolutePath());
+		    	    File file = new File (thing, "horseimage.jpg");
+		        	  if (file.exists())
+		      	    {
+		      	    	try {
+		      	    		FileInputStream insert = new FileInputStream(file);
+		      	    		Date lastModDate = new Date(file.lastModified());  
+		      	    		String date = lastModDate.toString();
+		      	            TextView t = (TextView)findViewById(R.id.textView3);  
+		      	            t.setText("Last picture taken on: " + date);
+		      	    		 initial = BitmapFactory.decodeStream(insert);
+
+		      	    	   
+		      	    	} catch (IOException e){
+		      	    		e.printStackTrace();
+		      	    	}
+		      	    }
+		 
+		            //Increase Counter to move to next Image
+		            currentImage++;
+		            currentImage = currentImage % numImages;
+		            		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
+		            //Set the image depending on the counter.
+		            switch (currentImage) {
+		            case 0:  imageI.setImageResource(R.drawable.horse);
+		                     break;
+		            case 1:  imageI.setImageResource(R.drawable.horse2);
+		            break;
+		            case 2:  imageI.setImageResource(R.drawable.horse3);
+		            break;
+		            case 3:  imageI.setImageResource(R.drawable.horse4);
+		            break;
+		            case 4:  imageI.setImageResource(R.drawable.horse5);
+		            break;
+		            case 5:  imageI.setImageResource(R.drawable.horse6);
+		            break;
+		            case 7: if (file.exists())
+	            	{ imageI.setImageBitmap(initial); }
+		            else { imageI.setImageResource(R.drawable.horse);
+		            currentImage = 0;
+		            }
+	 	            break;
+		            default: imageI.setImageResource(R.drawable.horse);
+		            currentImage = 0;
+		            }
+		            }
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) 
 {

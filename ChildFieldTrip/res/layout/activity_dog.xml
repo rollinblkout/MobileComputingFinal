@@ -27,7 +27,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:contentDescription="@string/image"
-        android:src="@drawable/puppy" />
+        android:src="@drawable/puppy"
+        android:onClick="onPictureClick" />
 
     <Button
         android:id="@+id/button1"
