@@ -21,6 +21,7 @@ Horse
 Lion
 Meerkat
 Mouse
+Octopus
 Parakeet
 Parrot
 Penguin
