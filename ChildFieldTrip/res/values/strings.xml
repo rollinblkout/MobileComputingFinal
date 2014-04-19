@@ -28,6 +28,7 @@
     </string-array>
     <string-array name="sealv">
         <item>Dolphin</item>
+        <item>Octopus</item>
     </string-array>
     <string-array name="rep">
         <item>Corn Snake</item>
@@ -206,5 +207,8 @@
     <string name="title_activity_sea_water">SeaWater</string>
     <string name="title_activity_dolphin">Dolphin</string>
     <string name="dolphininfo">Dolphins are mammals that are closely related to whales. They eat squid and fish. They are thought of as most intelligent animal and are highly social.</string>
+    <string name="title_activity_octopus">Octopus</string>
+    <string name="octopus">Octopus</string>
+    <string name="octopusinfo">Octupus have eight arms. Their mouthes have a hard beak and are located in the center of their arms. To defend themselves they will spray ink at their predators.</string>
 
 </resources>

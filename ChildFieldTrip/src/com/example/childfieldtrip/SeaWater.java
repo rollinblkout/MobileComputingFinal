@@ -24,13 +24,17 @@ ListView Sea;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Dolphin"};
+				String[] items = { "Dolphin","Octopus"};
 				if (items[position].equals("Dolphin")){
 					
 						Intent i = new Intent(getApplicationContext(), Dolphin.class);
 						startActivity(i);
 				}
-		
+				if (items[position].equals("Octopus")){
+					
+					Intent i = new Intent(getApplicationContext(), Octopus.class);
+					startActivity(i);
+			}
 					
 			}
 		});
