@@ -21,6 +21,7 @@
 
     <ImageView
         android:id="@+id/imageView1"
+             android:scaleType="fitXY"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:onClick="onPictureClick"

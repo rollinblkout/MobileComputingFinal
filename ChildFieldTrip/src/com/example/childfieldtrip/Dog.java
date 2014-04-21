@@ -1,9 +1,7 @@
 package com.example.childfieldtrip;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,7 +19,7 @@ import android.widget.TextView;
 @SuppressLint("SimpleDateFormat")
 public class Dog extends Activity {
 private int currentImage = 0;
-private int numImages = 6;
+private int numImages = 7;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -30,21 +28,19 @@ private int numImages = 6;
 	    
 	    File thing = new File (stuff.getAbsolutePath());
 	    File file = new File (thing, "dogimage.jpg");
-	    
+	    String path = stuff + "/dogimage.jpg";
 	    if (file.exists())
 	    {
-	    	try {
-	    		FileInputStream insert = new FileInputStream(file);
 	    		Date lastModDate = new Date(file.lastModified());  
 	    		String date = lastModDate.toString();
-	            TextView t = (TextView)findViewById(R.id.textView3);  
+	            TextView t = (TextView)findViewById(R.id.textView3); 
+	            BitmapFactory.Options options = new BitmapFactory.Options();
+	            options.inSampleSize = 8;
 	            t.setText("Last picture taken on: " + date);
-	    		Bitmap initial = BitmapFactory.decodeStream(insert);
+	    		Bitmap initial = BitmapFactory.decodeFile(path, options);
 	    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
 	    	        imageI.setImageBitmap(initial);
-	    	} catch (IOException e){
-	    		e.printStackTrace();
-	    	}
+	 
 	    }
 	}
 	        public void goToCamera(View arg0)
@@ -78,28 +74,45 @@ private int numImages = 6;
 	        public void onPictureClick(View v) {
 	        	
 	        Bitmap initial = null;
+	        Bitmap init = null;
 
-	        	
+    	    File stuff2 = Environment.getExternalStorageDirectory();
+    	    
+    	    File thing2 = new File (stuff2.getAbsolutePath());
+    	    File file2 = new File (thing2, "olddogimage.jpg");
+    	    if (file2.exists())
+    	    {
+    	    	
+      	          String p2 = thing2 + "/olddogimage.jpg";
+      	        BitmapFactory.Options opt = new BitmapFactory.Options();
+	            opt.inSampleSize = 8;
+      	      init = BitmapFactory.decodeFile(p2, opt);
+   
+
+      	    	   
+      	    	
+    	    }
 	    	    File stuff = Environment.getExternalStorageDirectory();
 	    	    
 	    	    File thing = new File (stuff.getAbsolutePath());
 	    	    File file = new File (thing, "dogimage.jpg");
 	        	  if (file.exists())
 	      	    {
-	      	    	try {
-	      	    		FileInputStream insert = new FileInputStream(file);
 	      	    		Date lastModDate = new Date(file.lastModified());  
 	      	    		String date = lastModDate.toString();
 	      	            TextView t = (TextView)findViewById(R.id.textView3);  
 	      	            t.setText("Last picture taken on: " + date);
-	      	    		 initial = BitmapFactory.decodeStream(insert);
+	      	          String p = thing + "/dogimage.jpg";
+	      	        BitmapFactory.Options opt = new BitmapFactory.Options();
+		            opt.inSampleSize = 8;
+	      	      initial = BitmapFactory.decodeFile(p, opt);
+	   
 
 	      	    	   
-	      	    	} catch (IOException e){
-	      	    		e.printStackTrace();
-	      	    	}
+	      	   
 	      	    }
 	 
+	        	  
 	            //Increase Counter to move to next Image
 	            currentImage++;
 	            currentImage = currentImage % numImages;
@@ -122,6 +135,12 @@ private int numImages = 6;
 	            currentImage = 0;
 	            }
  	            break;
+	            case 6: if (file2.exists())
+            	{ imageI.setImageBitmap(init); }
+	            else { imageI.setImageResource(R.drawable.puppy);
+	            currentImage = 0;
+	            }
+ 	            break;
 	            default: imageI.setImageResource(R.drawable.puppy);
 	            currentImage = 0;
 	            }
@@ -132,20 +151,29 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
     super.onActivityResult(requestCode, resultCode, data);
     if( requestCode == 5)
     {   
-        Bitmap picture = (Bitmap) data.getExtras().get("data");
-        ImageView image =(ImageView) findViewById(R.id.imageView1);
-        image.setImageBitmap(picture);
 
-        SimpleDateFormat formatter=new SimpleDateFormat("dd-MMM-yyyy");  
-        String c = formatter.format(new Date());
-        TextView t = (TextView)findViewById(R.id.textView3);  
-        t.setText("Last picture taken on: " + c);
-    }
-    else 
+    File stuff = Environment.getExternalStorageDirectory();
+    
+    File thing = new File (stuff.getAbsolutePath());
+    File file = new File (thing, "dogimage.jpg");
+    String path = stuff + "/dogimage.jpg";
+    if (file.exists())
     {
-    	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+    	Date lastModDate = new Date(file.lastModified());  
+    		String date = lastModDate.toString();
+            TextView t = (TextView)findViewById(R.id.textView3); 
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inSampleSize = 8;
+            t.setText("Last picture taken on: " + date);
+    		Bitmap initial = BitmapFactory.decodeFile(path, options);
+    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
+    	        imageI.setImageBitmap(initial);
+
     }
-
 }
-
+else 
+{
+Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+}
 }

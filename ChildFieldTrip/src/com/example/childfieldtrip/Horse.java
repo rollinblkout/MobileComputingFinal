@@ -1,9 +1,7 @@
 package com.example.childfieldtrip;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import android.net.Uri;
@@ -23,7 +21,7 @@ import android.widget.Toast;
 @SuppressLint("SimpleDateFormat")
 public class Horse extends Activity {
 	private int currentImage = 0;
-	private int numImages = 7;
+	private int numImages = 8;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,21 +30,19 @@ public class Horse extends Activity {
 	    
 	    File thing = new File (stuff.getAbsolutePath());
 	    File file = new File (thing, "horseimage.jpg");
-	    
+	    String path = stuff + "/horseimage.jpg";
 	    if (file.exists())
 	    {
-	    	try {
-	    		FileInputStream insert = new FileInputStream(file);
-	    		Date lastModDate = new Date(file.lastModified());  
+	    	Date lastModDate = new Date(file.lastModified());  
 	    		String date = lastModDate.toString();
-	            TextView t = (TextView)findViewById(R.id.textView3);  
+	            TextView t = (TextView)findViewById(R.id.textView3); 
+	            BitmapFactory.Options options = new BitmapFactory.Options();
+	            options.inSampleSize = 8;
 	            t.setText("Last picture taken on: " + date);
-	    		Bitmap initial = BitmapFactory.decodeStream(insert);
+	    		Bitmap initial = BitmapFactory.decodeFile(path, options);
 	    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
 	    	        imageI.setImageBitmap(initial);
-	    	} catch (IOException e){
-	    		e.printStackTrace();
-	    	}
+	   
 	    }
 	}
 	        public void goToCamera(View arg0)
@@ -77,79 +73,109 @@ public class Horse extends Activity {
 	            startActivityForResult(Intent, 5);
 	        }
       
-  public void onPictureClick(View v) {
+	        public void onPictureClick(View v) {
 	        	
-		        Bitmap initial = null;
+	        Bitmap initial = null;
+	        Bitmap init = null;
 
-		        	
-		    	    File stuff = Environment.getExternalStorageDirectory();
-		    	    
-		    	    File thing = new File (stuff.getAbsolutePath());
-		    	    File file = new File (thing, "horseimage.jpg");
-		        	  if (file.exists())
-		      	    {
-		      	    	try {
-		      	    		FileInputStream insert = new FileInputStream(file);
-		      	    		Date lastModDate = new Date(file.lastModified());  
-		      	    		String date = lastModDate.toString();
-		      	            TextView t = (TextView)findViewById(R.id.textView3);  
-		      	            t.setText("Last picture taken on: " + date);
-		      	    		 initial = BitmapFactory.decodeStream(insert);
+    	    File stuff2 = Environment.getExternalStorageDirectory();
+    	    
+    	    File thing2 = new File (stuff2.getAbsolutePath());
+    	    File file2 = new File (thing2, "oldhorseimage.jpg");
+    	    if (file2.exists())
+    	    {
+      	          String p2 = thing2 + "/oldhorseimage.jpg";
+      	        BitmapFactory.Options opt = new BitmapFactory.Options();
+	            opt.inSampleSize = 8;
+      	      init = BitmapFactory.decodeFile(p2, opt);
+   
 
-		      	    	   
-		      	    	} catch (IOException e){
-		      	    		e.printStackTrace();
-		      	    	}
-		      	    }
-		 
-		            //Increase Counter to move to next Image
-		            currentImage++;
-		            currentImage = currentImage % numImages;
-		            		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
-		            //Set the image depending on the counter.
-		            switch (currentImage) {
-		            case 0:  imageI.setImageResource(R.drawable.horse);
-		                     break;
-		            case 1:  imageI.setImageResource(R.drawable.horse2);
-		            break;
-		            case 2:  imageI.setImageResource(R.drawable.horse3);
-		            break;
-		            case 3:  imageI.setImageResource(R.drawable.horse4);
-		            break;
-		            case 4:  imageI.setImageResource(R.drawable.horse5);
-		            break;
-		            case 5:  imageI.setImageResource(R.drawable.horse6);
-		            break;
-		            case 7: if (file.exists())
-	            	{ imageI.setImageBitmap(initial); }
-		            else { imageI.setImageResource(R.drawable.horse);
-		            currentImage = 0;
-		            }
-	 	            break;
-		            default: imageI.setImageResource(R.drawable.horse);
-		            currentImage = 0;
-		            }
-		            }
+      	    	   
+    	    }
+	    	    File stuff = Environment.getExternalStorageDirectory();
+	    	    
+	    	    File thing = new File (stuff.getAbsolutePath());
+	    	    File file = new File (thing, "horseimage.jpg");
+	        	  if (file.exists())
+	      	    {
+	        		  Date lastModDate = new Date(file.lastModified());  
+	      	    		String date = lastModDate.toString();
+	      	            TextView t = (TextView)findViewById(R.id.textView3);  
+	      	            t.setText("Last picture taken on: " + date);
+	      	          String p = thing + "/horseimage.jpg";
+	      	        BitmapFactory.Options opt = new BitmapFactory.Options();
+		            opt.inSampleSize = 8;
+	      	      initial = BitmapFactory.decodeFile(p, opt);
+	   
+
+	      	    	   
+	      	    
+	      	    }
+	 
+	        	  
+	            //Increase Counter to move to next Image
+	            currentImage++;
+	            currentImage = currentImage % numImages;
+	            		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
+	            //Set the image depending on the counter.
+	            switch (currentImage) {
+	            case 0:  imageI.setImageResource(R.drawable.horse);
+	                     break;
+	            case 1:  imageI.setImageResource(R.drawable.horse2);
+	            break;
+	            case 2:  imageI.setImageResource(R.drawable.horse3);
+	            break;
+	            case 3:  imageI.setImageResource(R.drawable.horse4);
+	            break;
+	            case 4:  imageI.setImageResource(R.drawable.horse5);
+	            break;
+	            case 5:  imageI.setImageResource(R.drawable.horse6);
+	            break;
+	            case 6: if (file.exists())
+            	{ imageI.setImageBitmap(initial); }
+	            else { imageI.setImageResource(R.drawable.horse);
+	            currentImage = 0;
+	            }
+ 	            break;
+	            case 7: if (file2.exists())
+            	{ imageI.setImageBitmap(init); }
+	            else { imageI.setImageResource(R.drawable.horse);
+	            currentImage = 0;
+	            }
+ 	            break;
+	            default: imageI.setImageResource(R.drawable.horse);
+	            currentImage = 0;
+	            }
+	            }
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) 
 {
     super.onActivityResult(requestCode, resultCode, data);
     if( requestCode == 5)
     {   
-        Bitmap picture = (Bitmap) data.getExtras().get("data");
-        ImageView image =(ImageView) findViewById(R.id.imageView1);
-        image.setImageBitmap(picture);
 
-        SimpleDateFormat formatter=new SimpleDateFormat("dd-MMM-yyyy");  
-        String c = formatter.format(new Date());
-        TextView t = (TextView)findViewById(R.id.textView3);  
-        t.setText("Last picture taken on: " + c);
-    }
-    else 
+    File stuff = Environment.getExternalStorageDirectory();
+    
+    File thing = new File (stuff.getAbsolutePath());
+    File file = new File (thing, "horseimage.jpg");
+    String path = stuff + "/horseimage.jpg";
+    if (file.exists())
     {
-    	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+    	Date lastModDate = new Date(file.lastModified());  
+    		String date = lastModDate.toString();
+            TextView t = (TextView)findViewById(R.id.textView3); 
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inSampleSize = 8;
+            t.setText("Last picture taken on: " + date);
+    		Bitmap initial = BitmapFactory.decodeFile(path, options);
+    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
+    	        imageI.setImageBitmap(initial);
+    
     }
-
 }
-
+else 
+{
+Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+}
 }
