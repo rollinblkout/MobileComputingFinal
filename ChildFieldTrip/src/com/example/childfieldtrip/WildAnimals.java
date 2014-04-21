@@ -7,6 +7,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 public class WildAnimals extends Activity {
 
@@ -27,6 +28,18 @@ public class WildAnimals extends Activity {
 		  d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
 		  e.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
 		  f.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+		  Button b1 = (Button) findViewById(R.id.button1);
+		  Button b2 = (Button) findViewById(R.id.button2);
+		  Button b3 = (Button) findViewById(R.id.button3);
+		  Button b4 = (Button) findViewById(R.id.button4);
+		  Button b5 = (Button) findViewById(R.id.button5);
+		  Button b6 = (Button) findViewById(R.id.button6);
+		  b1.setOnClickListener(canines);
+		  b2.setOnClickListener(felines);
+		  b3.setOnClickListener(rep);
+		  b4.setOnClickListener(rod);
+		  b5.setOnClickListener(birds);
+		  b6.setOnClickListener(farm);
 	}
 
 	@Override
@@ -36,35 +49,62 @@ public class WildAnimals extends Activity {
 		return true;
 	}
 	 
-	 public void goToCanines(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),Canines.class);
-	  startActivity(i);
-	 }
+	View.OnClickListener canines = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),Canines.class);
+			  startActivity(i);
+			 }
+	};
 	 
-	 public void goToFelines(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),Felines.class);
-	  startActivity(i);
-	 }
-	 
-	 public void goToWildReptiles(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),WildReptiles.class);
-	  startActivity(i);
-	 }
+	View.OnClickListener felines = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),Felines.class);
+			  startActivity(i);
+			 }
+	};
 
-	 public void goToWildRodents(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),WildRodents.class);
-	  startActivity(i);
-	 }
+
 	 
-	 public void goToOtherMammals(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),OtherMammals.class);
-	  startActivity(i);
-	 }
+	View.OnClickListener rep = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),WildReptiles.class);
+			  startActivity(i);
+			 }
+
+	};
+
+	View.OnClickListener rod = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),WildRodents.class);
+			  startActivity(i);
+			 }
+	};
 	 
-	 public void goToWildBirds(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),WildBirds.class);
-	  startActivity(i);
-	 }
+	View.OnClickListener farm = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),OtherMammals.class);
+			  startActivity(i);
+			 }
+	};
+	 
+	View.OnClickListener birds = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),WildBirds.class);
+			  startActivity(i);
+			 }
+	};
 	}
 
 

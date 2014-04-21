@@ -10,6 +10,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 public class Aquatic extends Activity {
 
@@ -20,12 +21,16 @@ public class Aquatic extends Activity {
 		  Drawable a = findViewById(R.id.button1).getBackground();
 		  Drawable b = findViewById(R.id.button2).getBackground();
 		  Drawable c = findViewById(R.id.button3).getBackground();
-
-
+		  Button b1 = (Button) findViewById(R.id.button1);
+		  Button b2 = (Button) findViewById(R.id.button2);
+		  Button b3 = (Button) findViewById(R.id.button3);
+		  
 		  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
 		  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
 		  c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
- 
+		  b1.setOnClickListener(fresh);
+		  b2.setOnClickListener(sea);
+		  b3.setOnClickListener(amp);
 	 }
 
 	 @Override
@@ -35,19 +40,32 @@ public class Aquatic extends Activity {
 	  return true;
 	 }
 	 
-	 public void goToFresh(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),FreshWater.class);
-	  startActivity(i);
-	 }
-	 
-	 public void goToSea(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),SeaWater.class);
-	  startActivity(i);
-	 }
-	 
-	 public void goToAmphibian(View arg0) {
-	  Intent i = new Intent(getApplicationContext(),Amphibian.class);
-	  startActivity(i);
-	 }
+	 View.OnClickListener fresh = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),FreshWater.class);
+			  startActivity(i);
+			 }
+	};
+	
+	 View.OnClickListener sea = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),SeaWater.class);
+			  startActivity(i);
+			 }
+			 
+	};
 
-	}
+	View.OnClickListener amp = new View.OnClickListener() {
+		
+		@Override
+		 public void onClick(View arg0) {
+			  Intent i = new Intent(getApplicationContext(),Amphibian.class);
+			  startActivity(i);
+			 }
+
+	};
+}

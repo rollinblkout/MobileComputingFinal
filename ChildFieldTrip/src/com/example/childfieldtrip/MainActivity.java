@@ -9,14 +9,17 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity{
 
  @Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_main);
-  
+  Button b1 = (Button) findViewById(R.id.button1);
+  Button b2 = (Button) findViewById(R.id.button2);
+  Button b3 = (Button) findViewById(R.id.button3);
   Drawable a = findViewById(R.id.button1).getBackground();
   Drawable b = findViewById(R.id.button2).getBackground();
   Drawable c = findViewById(R.id.button3).getBackground();
@@ -27,6 +30,9 @@ public class MainActivity extends Activity {
   c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
   d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
   e.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+  b1.setOnClickListener(animal);
+  b2.setOnClickListener(spell);
+  b3.setOnClickListener(exit);
  }
 
  @Override
@@ -35,15 +41,31 @@ public class MainActivity extends Activity {
   getMenuInflater().inflate(R.menu.main, menu);
   return true;
  }
- public void goToAnimalScreen(View arg0) {
+ 
+ View.OnClickListener animal = new View.OnClickListener() {
+ public void onClick(View arg0) {
   Intent i = new Intent(getApplicationContext(),AnimalTitle.class);
   startActivity(i);
  }
- public void goToSpellGame(View arg0){
-	  Intent x = new Intent(getApplicationContext(),GuessImage.class);
-	  startActivity(x);
- }
- public void exit(View arg0) {
-	 System.exit(0);
-	 }
+ };
+
+ View.OnClickListener spell = new View.OnClickListener() {
+	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		  Intent x = new Intent(getApplicationContext(),GuessImage.class);
+		  startActivity(x);
+	}
+};
+
+ View.OnClickListener exit = new View.OnClickListener() {
+	
+	 public void onClick(View arg0) {
+		 System.exit(0);
+		 }
+};
+
+
+
 }

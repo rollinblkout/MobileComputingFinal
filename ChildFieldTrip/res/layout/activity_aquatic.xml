@@ -16,7 +16,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp"
-        android:onClick="goToFresh"
         android:text="@string/fresh"
         android:width="200dp" />
 
@@ -26,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
-        android:onClick="goToSea"
         android:text="@string/sea"
         android:width="200dp" />
 
@@ -36,7 +34,6 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/button2"
-        android:onClick="goToAmphibian"
         android:text="@string/amphibian"
         android:width="200dp" />
 

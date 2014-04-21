@@ -15,6 +15,7 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -30,11 +31,16 @@ public class AnimalTitle extends Activity {
   Drawable b = findViewById(R.id.button2).getBackground();
   Drawable c = findViewById(R.id.button3).getBackground();
   Drawable d = findViewById(R.id.button4).getBackground();
-
+ Button b1 = (Button) findViewById(R.id.button1);
+ Button b2 = (Button) findViewById(R.id.button2);
+ Button b3 = (Button) findViewById(R.id.button3);
   a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
   b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
   c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
   d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+  b1.setOnClickListener(domestic);
+  b2.setOnClickListener(wild);
+  b3.setOnClickListener(aquatic);
 
   
  }
@@ -94,18 +100,33 @@ public class AnimalTitle extends Activity {
 			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the database!", Toast.LENGTH_SHORT).show();
 		}
 	}
- public void goToAquatic(View arg0) {
-		
-	  Intent i = new Intent(getApplicationContext(),Aquatic.class);
-	  startActivity(i);
-	 }
- public void goToDomesticScreen(View arg0) {
-  Intent i = new Intent(getApplicationContext(),Domestic.class);
-  startActivity(i);
- }
- public void goToWildAnimalScreen(View arg0) {
+ View.OnClickListener aquatic = new View.OnClickListener() {
 	
-	  Intent i = new Intent(getApplicationContext(),WildAnimals.class);
-	  startActivity(i);
-	 }
+	@Override
+	 public void onClick(View arg0) {
+		
+		  Intent i = new Intent(getApplicationContext(),Aquatic.class);
+		  startActivity(i);
+		 }
+};
+
+View.OnClickListener domestic = new View.OnClickListener() {
+	
+	@Override
+	 public void onClick(View arg0) {
+		  Intent i = new Intent(getApplicationContext(),Domestic.class);
+		  startActivity(i);
+		 }
+};
+
+View.OnClickListener wild = new View.OnClickListener() {
+	
+	@Override
+	 public void onClick(View arg0) {
+		
+		  Intent i = new Intent(getApplicationContext(),WildAnimals.class);
+		  startActivity(i);
+		 }
+};
+
 }
