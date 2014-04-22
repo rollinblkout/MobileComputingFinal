@@ -248,6 +248,26 @@
             android:name="com.example.childfieldtrip.Octopus"
             android:label="@string/title_activity_octopus" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Monkey"
+            android:label="@string/title_activity_monkey" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Gorilla"
+            android:label="@string/title_activity_gorilla" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Baboon"
+            android:label="@string/title_activity_baboon" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Buffalo"
+            android:label="@string/title_activity_buffalo" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Boar"
+            android:label="@string/title_activity_boar" >
+        </activity>
     </application>
 
 </manifest>

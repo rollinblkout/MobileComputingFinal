@@ -210,5 +210,21 @@
     <string name="title_activity_octopus">Octopus</string>
     <string name="octopus">Octopus</string>
     <string name="octopusinfo">Octupus have eight arms. Their mouthes have a hard beak and are located in the center of their arms. To defend themselves they will spray ink at their predators.</string>
+    <string name="title_activity_monkey">Monkey</string>
+    <string name="monkey">Monkey</string>
+    <string name="monkey_desc">A monkey is any nonhuman primate, with the usual exception of the lemurs and tarsiers.[1] Thus defined, there are three type of monkeys: (1) non-human hominoids (also known as apes), (2) old world monkeys, and (3) new world monkeys.</string>
+    <string name="title_activity_gorilla">Gorilla</string>
+    <string name="gorilla">Gorilla</string>
+    <string name="gorilla_desc">Gorillas constitute the eponymous genus Gorilla, the largest extant genus of primates by physical size. They are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Africa. </string>
+    <string name="title_activity_baboon">Baboon</string>
+    <string name="baboon">Baboon</string>
+    <string name="baboon_desc">Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae. The five species are some of the largest non-hominoid members of the primate order; only the mandrill and the drill are larger.</string>
+    <string name="title_activity_buffalo">Buffalo</string>
+    <string name="buffalo">Buffalo</string>
+    <string name="buffalo_desc">The water buffalo or domestic Asian water buffalo (Bubalus bubalis) is a large bovid found on the Indian subcontinent to Vietnam and Peninsular Malaysia, in Sri Lanka, in Luzon Island in the Philippines, and in Borneo.</string>
+    <string name="title_activity_boar">Boar</string>
+    <string name="boar">Boar</string>
+    <string name="boar_desc">Wild boar or wild pig (Sus scrofa) is a species of the pig genus Sus, part of the biological family Suidae. The species includes many subspecies. It is the wild ancestor of the domestic pig, an animal with which it freely hybridises</string>
+    
 
 </resources>
