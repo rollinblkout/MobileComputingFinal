@@ -280,6 +280,18 @@
             android:name="com.example.childfieldtrip.Coyote"
             android:label="@string/title_activity_coyote" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Leopard"
+            android:label="@string/title_activity_leopard" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Panther"
+            android:label="@string/title_activity_panther" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Ocelot"
+            android:label="@string/title_activity_ocelot" >
+        </activity>
     </application>
 
 </manifest>

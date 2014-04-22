@@ -23,10 +23,12 @@ Hamster
 Hippo
 Horse
 Hyena
+Leopard
 Lion
 Meerkat
 Monkey
 Mouse
+Panther
 Parakeet
 Parrot
 Penguin
