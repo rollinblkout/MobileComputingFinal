@@ -5,6 +5,7 @@ Boar
 Buffalo
 Birds
 Canines
+Capybara
 Cat
 Cheetah
 Cornsnake
@@ -18,6 +19,7 @@ Fox
 Gazelle
 Giraffe
 Gorilla
+Groundhog
 Guineapig
 Hamster
 Hippo
@@ -28,6 +30,7 @@ Lion
 Meerkat
 Monkey
 Mouse
+Ocelot
 Panther
 Parakeet
 Parrot

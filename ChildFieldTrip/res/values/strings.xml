@@ -243,6 +243,12 @@
     <string name="title_activity_ocelot">Ocelot</string>
     <string name="ocelot">Ocelot</string>
     <string name="ocelot_desc">The ocelot (/ˈɒsəlɒt/; Leopardus pardalis), also known as the dwarf leopard, is a wild cat distributed extensively over South America including the islands of Trinidad and Margarita, Central America, and Mexico.</string>
+    <string name="title_activity_capybara">Capybara</string>
+    <string name="capybara">Capybara</string>
+    <string name="capybara_desc">The capybara (Hydrochoerus hydrochaeris) is the largest rodent in the world, followed by the beaver, porcupine, and mara. Its closest relatives are guinea pigs and rock cavies, and it is more distantly related to the agouti.</string>
+    <string name="title_activity_groundhog">Groundhog</string>
+    <string name="groundhog">Groundhog</string>
+    <string name="groundhog_desc">The groundhog (Marmota monax), also known as a woodchuck, whistle-pig, or land-beaver in some areas, is a rodent of the family Sciuridae, belonging to the group of large ground squirrels known as marmots.</string>
     
 
 </resources>
