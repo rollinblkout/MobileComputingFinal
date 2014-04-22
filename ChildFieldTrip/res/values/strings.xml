@@ -225,6 +225,15 @@
     <string name="title_activity_boar">Boar</string>
     <string name="boar">Boar</string>
     <string name="boar_desc">Wild boar or wild pig (Sus scrofa) is a species of the pig genus Sus, part of the biological family Suidae. The species includes many subspecies. It is the wild ancestor of the domestic pig, an animal with which it freely hybridises</string>
+    <string name="title_activity_fox">Fox</string>
+    <string name="fox">Fox</string>
+    <string name="fox_desc">Fox is a common name for many species of alert omnivorous mammals belonging to the Canidae family. Foxes are small-to-medium-size canids (slightly smaller than a medium-size domestic dog).</string>
+    <string name="title_activity_hyena">Hyena</string>
+    <string name="hyena">Hyena</string>
+    <string name="hyena_desc">Hyenas or hyaenas (from Greek "ὕαινα" — hýaina) are the animals of the family Hyaenidae /haɪˈɛnɨdiː/ of the feliform suborder of the Carnivora. With only four species, it is the fourth-smallest biological family in the Carnivora.</string>
+    <string name="title_activity_coyote">Coyote</string>
+    <string name="coyote">Coyote</string>
+    <string name="coyote_desc">The coyote (US /kaɪˈoʊtiː/ or /ˈkaɪ.oʊt/, UK /kɔɪˈjoʊteɪ/, or /kɔɪˈjoʊt/;[2] Canis latrans), also known as the American jackal, brush wolf, or the prairie wolf, is a species of canine found throughout North and Central America.</string>
     
 
 </resources>

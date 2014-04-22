@@ -9,10 +9,12 @@ Cat
 Cheetah
 Cornsnake
 Cow
+Coyote
 Deer
 Dog
 Elephant
 Felines
+Fox
 Gazelle
 Giraffe
 Gorilla
@@ -20,6 +22,7 @@ Guineapig
 Hamster
 Hippo
 Horse
+Hyena
 Lion
 Meerkat
 Monkey
