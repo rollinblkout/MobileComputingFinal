@@ -26,12 +26,22 @@ public class WildRodents extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Meerkat"};
+				String[] items = { "Capybara", "Groundhog","Meerkat"};
 				if (items[position].equals("Meerkat")){
 					
 						Intent i = new Intent(getApplicationContext(),Meerkat.class);
 						startActivity(i);
 				}
+				if (items[position].equals("Capybara")){
+					
+					Intent i = new Intent(getApplicationContext(),Capybara.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Groundhog")){
+					
+					Intent i = new Intent(getApplicationContext(),Groundhog.class);
+					startActivity(i);
+			}
 		
 					
 			}

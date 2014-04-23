@@ -46,20 +46,30 @@
         <item>Parrot</item>
     </string-array>
     <string-array name="wildmamals">
+        <item>Baboon</item>
         <item>Bear</item>
+        <item>Boar</item>
+        <item>Buffalo</item>
         <item>Deer</item>
         <item>Elephant</item>
         <item>Gazelle</item>
         <item>Giraffe</item>
+        <item>Gorilla</item>
         <item>Hippo</item>
+        <item>Monkey</item>
         <item>Zebra</item>
     </string-array>
     <string-array name="wildfelines">
         <item>Cheetah</item>
+        <item>Leopard</item>
         <item>Lion</item>
+        <item>Ocelot</item>
+        <item>Panther</item>
         <item>Tiger</item>
     </string-array>
     <string-array name="wildrodents">
+        <item>Capybara</item>
+        <item>Groundhog</item>
         <item>Meerkat</item>
     </string-array>
     <string-array name="wildreptiles">
@@ -69,6 +79,9 @@
         <item>Penguin</item>
     </string-array>
     <string-array name="wildcanines">
+        <item>Coyote</item>
+        <item>Fox</item>
+        <item>Hyena</item>
         <item>Wolf</item>
     </string-array>
 

@@ -25,7 +25,7 @@ ListView OtherMammals;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Bear","Deer","Elephant","Gazelle","Giraffe","Hippo","Zebra"};
+				String[] items = { "Baboon","Bear","Boar","Buffalo","Deer","Elephant","Gazelle","Giraffe","Gorilla","Hippo","Monkey","Zebra"};
 				if (items[position].equals("Bear")){
 					
 						Intent i = new Intent(getApplicationContext(),Bear.class);
@@ -41,7 +41,31 @@ ListView OtherMammals;
 					Intent i = new Intent(getApplicationContext(),Elephant.class);
 					startActivity(i);
 			}
-				
+	if (items[position].equals("Monkey")){
+					
+					Intent i = new Intent(getApplicationContext(),Monkey.class);
+					startActivity(i);
+			}
+	if (items[position].equals("Gorilla")){
+		
+		Intent i = new Intent(getApplicationContext(),Gorilla.class);
+		startActivity(i);
+}
+	if (items[position].equals("Baboon")){
+		
+		Intent i = new Intent(getApplicationContext(),Baboon.class);
+		startActivity(i);
+}
+	if (items[position].equals("Buffalo")){
+		
+		Intent i = new Intent(getApplicationContext(),Buffalo.class);
+		startActivity(i);
+}
+	if (items[position].equals("Boar")){
+		
+		Intent i = new Intent(getApplicationContext(),Boar.class);
+		startActivity(i);
+}
 	if (items[position].equals("Gazelle")){
 					
 					Intent i = new Intent(getApplicationContext(),Gazelle.class);

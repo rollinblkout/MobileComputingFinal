@@ -27,7 +27,7 @@ public class Felines extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Cheetah","Lion","Tiger"};
+				String[] items = { "Cheetah","Leopard","Lion","Ocelot","Panther","Tiger"};
 				if (items[position].equals("Cheetah")){
 					
 						Intent i = new Intent(getApplicationContext(),Cheetah.class);
@@ -43,7 +43,22 @@ public class Felines extends Activity {
 					Intent i = new Intent(getApplicationContext(),Tiger.class);
 					startActivity(i);
 			}
+	if (items[position].equals("Leopard")){
 					
+					Intent i = new Intent(getApplicationContext(),Leopard.class);
+					startActivity(i);
+			}
+	if (items[position].equals("Ocelot")){
+		
+		Intent i = new Intent(getApplicationContext(),Ocelot.class);
+		startActivity(i);
+}
+			
+			if (items[position].equals("Panther")){
+				
+				Intent i = new Intent(getApplicationContext(),Panther.class);
+				startActivity(i);
+		}
 			}
 		});
 			}

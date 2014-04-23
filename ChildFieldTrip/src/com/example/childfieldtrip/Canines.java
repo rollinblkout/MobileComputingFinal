@@ -24,13 +24,27 @@ ListView Dogs;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Wolf"};
+				String[] items = { "Coyote", "Fox", "Hyena","Wolf"};
 				if (items[position].equals("Wolf")){
 					
 						Intent i = new Intent(getApplicationContext(), Wolf.class);
 						startActivity(i);
 				}
-		
+				if (items[position].equals("Coyote")){
+					
+					Intent i = new Intent(getApplicationContext(), Coyote.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Hyena")){
+					
+					Intent i = new Intent(getApplicationContext(), Hyena.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Fox")){
+					
+					Intent i = new Intent(getApplicationContext(), Fox.class);
+					startActivity(i);
+			}
 					
 			}
 		});
