@@ -33,8 +33,8 @@ public class GuessImage extends Activity {
 		  Drawable a = findViewById(R.id.button1).getBackground();
 		  Drawable b = findViewById(R.id.button2).getBackground();
 
-		  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+		  a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);   
 
 		final EditText guess = (EditText) findViewById(R.id.editText1);
 		final TextView correct=(TextView) findViewById(R.id.textView2);
