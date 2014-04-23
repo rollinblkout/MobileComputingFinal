@@ -27,9 +27,9 @@ public class Aquatic extends Activity {
 		  Button b2 = (Button) findViewById(R.id.button2);
 		  Button b3 = (Button) findViewById(R.id.button3);
 		  
-		  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+		  a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
 		  b1.setOnClickListener(fresh);
 		  b2.setOnClickListener(sea);
 		  b3.setOnClickListener(amp);

@@ -24,12 +24,12 @@ public class WildAnimals extends Activity {
 		  Drawable d = findViewById(R.id.button4).getBackground();
 		  Drawable e = findViewById(R.id.button5).getBackground();
 		  Drawable f = findViewById(R.id.button6).getBackground();
-		  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  e.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-		  f.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+		  a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  d.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  e.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+		  f.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
 		  Button b1 = (Button) findViewById(R.id.button1);
 		  Button b2 = (Button) findViewById(R.id.button2);
 		  Button b3 = (Button) findViewById(R.id.button3);

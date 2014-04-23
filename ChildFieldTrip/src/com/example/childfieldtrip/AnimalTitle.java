@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import android.R.layout;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -38,10 +37,10 @@ public class AnimalTitle extends Activity {
  Button b1 = (Button) findViewById(R.id.button1);
  Button b2 = (Button) findViewById(R.id.button2);
  Button b3 = (Button) findViewById(R.id.button3);
-  a.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-  b.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-  c.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
-  d.setColorFilter(0xFF00FF00, PorterDuff.Mode.DARKEN);  
+ a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+ b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+ c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+ d.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
   b1.setOnClickListener(domestic);
   b2.setOnClickListener(wild);
   b3.setOnClickListener(aquatic);
