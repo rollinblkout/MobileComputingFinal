@@ -1,9 +1,35 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings"/>
+     <item android:id="@+id/action_back"
+          android:icon="@drawable/backb"
+          android:title="@string/back"
+          android:showAsAction="ifRoom" 
+          />
+    <item android:id="@+id/action_home"
+          android:icon="@drawable/house"
+          android:title="@string/home"
+          android:showAsAction="ifRoom" 
+           />
+    
+    <item android:id="@+id/action_spell"
+          android:icon="@drawable/pencil"
+          android:title="@string/spellgame"
+          android:showAsAction="ifRoom" 
+           />
+<item android:id="@+id/action_domestic"
+          android:icon="@drawable/caticon"
+          android:title="@string/domestic"
+          android:showAsAction="ifRoom" 
+           />
 
+<item android:id="@+id/action_aquatic"
+          android:icon="@drawable/fish"
+          android:title="@string/aquatic"
+          android:showAsAction="ifRoom" 
+           />
+<item android:id="@+id/action_wild"
+          android:icon="@drawable/tigericon"
+          android:title="@string/wild"
+          android:showAsAction="ifRoom" 
+           />
 </menu>

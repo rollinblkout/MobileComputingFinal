@@ -15,6 +15,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -175,4 +178,48 @@ public class Alligator extends Activity {
 	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
 	}
 	}
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+ // Inflate the menu; this adds items to the action bar if it is present.
+	 MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.birds, menu);
+	    return super.onCreateOptionsMenu(menu);
+}
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    // Handle presses on the action bar items
+    switch (item.getItemId()) {
+        case R.id.action_back:
+        	finish();
+            return true;
+        case R.id.action_home:
+        	Intent i = new Intent(getApplicationContext(),MainActivity.class);
+  		  startActivity(i);
+  		  finish();
+            return true;
+        case R.id.action_spell:
+        	Intent c = new Intent(getApplicationContext(),GuessImage.class);
+  		  startActivity(c);
+  		  finish();
+  		  return true;
+        case R.id.action_domestic:
+        	Intent d = new Intent(getApplicationContext(),Domestic.class);
+  		  startActivity(d);
+  		  finish();
+  		  return true;
+        case R.id.action_aquatic:
+        	Intent a = new Intent(getApplicationContext(),Aquatic.class);
+  		  startActivity(a);
+  		  finish();
+  		  return true;
+        case R.id.action_wild:
+        	Intent x = new Intent(getApplicationContext(),WildAnimals.class);
+  		  startActivity(x);
+  		  finish();
+  		  return true;
+        default:
+            return super.onOptionsItemSelected(item);
+    }
+}
 }

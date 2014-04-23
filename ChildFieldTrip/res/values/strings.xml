@@ -249,6 +249,7 @@
     <string name="title_activity_groundhog">Groundhog</string>
     <string name="groundhog">Groundhog</string>
     <string name="groundhog_desc">The groundhog (Marmota monax), also known as a woodchuck, whistle-pig, or land-beaver in some areas, is a rodent of the family Sciuridae, belonging to the group of large ground squirrels known as marmots.</string>
-    
+    <string name="back">Go Back</string>
+    <string name="home">Home</string>
 
 </resources>
