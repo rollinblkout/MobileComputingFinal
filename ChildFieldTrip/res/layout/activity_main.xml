@@ -21,17 +21,6 @@
         android:width="200dp" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
-        android:text="@string/welcome"
-        android:textColor="#FFFFFF"
-        android:textSize="17sp" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,25 +40,7 @@
  
         android:text="@string/exit" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_alignRight="@+id/button1"
-        android:layout_below="@+id/button4"
-        android:text="@string/definitions"
-        android:width="200dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/facts"
-        android:width="200dp" />
 
     <Button
         android:id="@+id/button2"
@@ -81,5 +52,26 @@
         android:text="@string/spellgame"
    
         android:width="200dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:text="@string/definitions"
+        android:textColor="#FFFFFF"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="@string/welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
 
 </RelativeLayout>

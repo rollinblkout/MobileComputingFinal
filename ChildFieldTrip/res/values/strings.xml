@@ -264,5 +264,10 @@
     <string name="groundhog_desc">The groundhog (Marmota monax), also known as a woodchuck, whistle-pig, or land-beaver in some areas, is a rodent of the family Sciuridae, belonging to the group of large ground squirrels known as marmots.</string>
     <string name="back">Go Back</string>
     <string name="home">Home</string>
+    <string name="animal">Animals</string>
+    <string name="title_activity_ferret">Ferret</string>
+    <string name="ferretinfo">A ferret is a small mammal from the weasel family. They are domesticated pets that are also used for hunting rabbits. They have long slength bodies averaging in 20 inches in length. They sleep up to 18 hours a day and are most active at night.</string>
+    <string name="ferret">Ferret</string>
+    <string name="title_activity_skunk">Skunk</string>
 
 </resources>

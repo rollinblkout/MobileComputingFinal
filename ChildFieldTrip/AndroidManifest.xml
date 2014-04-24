@@ -300,6 +300,14 @@
             android:name="com.example.childfieldtrip.Groundhog"
             android:label="@string/title_activity_groundhog" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Ferret"
+            android:label="@string/title_activity_ferret" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Skunk"
+            android:label="@string/title_activity_skunk" >
+        </activity>
     </application>
 
 </manifest>

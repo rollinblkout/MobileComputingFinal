@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class Pig extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 6;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -108,10 +108,7 @@ public class Pig extends Activity {
 		      	        BitmapFactory.Options opt = new BitmapFactory.Options();
 			            opt.inSampleSize = 8;
 		      	      initial = BitmapFactory.decodeFile(p, opt);
-		   
 
-		      	    	   
-		    
 		      	    }
 		 
 		        	  
@@ -123,13 +120,20 @@ public class Pig extends Activity {
 		            switch (currentImage) {
 		            case 0:  imageI.setImageResource(R.drawable.pig);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.pig2);
+                    break;
+		            case 2:  imageI.setImageResource(R.drawable.pig3);
+		            break;
+		            case 3:  imageI.setImageResource(R.drawable.pig4);
+                    break;
+
+		            case 4: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
 		            else { imageI.setImageResource(R.drawable.pig);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 5: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
 		            else { imageI.setImageResource(R.drawable.pig);
 		            currentImage = 0;

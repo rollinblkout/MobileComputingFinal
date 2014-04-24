@@ -25,12 +25,17 @@ ListView OtherMammals;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Baboon","Bear","Boar","Buffalo","Deer","Elephant","Gazelle","Giraffe","Gorilla","Hippo","Monkey","Zebra"};
+				String[] items = { "Baboon","Bear","Boar","Buffalo","Deer","Elephant","Gazelle","Giraffe","Gorilla","Hippo","Monkey", "Skunk","Zebra"};
 				if (items[position].equals("Bear")){
 					
 						Intent i = new Intent(getApplicationContext(),Bear.class);
 						startActivity(i);
 				}
+				if (items[position].equals("Skunk")){
+					
+					Intent i = new Intent(getApplicationContext(),Skunk.class);
+					startActivity(i);
+			}
 				if (items[position].equals("Deer")){
 					
 					Intent i = new Intent(getApplicationContext(),Deer.class);

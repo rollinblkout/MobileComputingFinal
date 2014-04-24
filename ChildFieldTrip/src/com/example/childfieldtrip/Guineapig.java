@@ -24,7 +24,7 @@ import android.widget.Toast;
 @SuppressLint("SimpleDateFormat")
 public class Guineapig extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 5;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -126,13 +126,17 @@ public class Guineapig extends Activity {
 		            switch (currentImage) {
 		            case 0:  imageI.setImageResource(R.drawable.guineapig);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.guineapig2);
+                    break;
+		            case 2:  imageI.setImageResource(R.drawable.guineapig3);
+                    break;
+		            case 3: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
 		            else { imageI.setImageResource(R.drawable.guineapig);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 4: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
 		            else { imageI.setImageResource(R.drawable.guineapig);
 		            currentImage = 0;

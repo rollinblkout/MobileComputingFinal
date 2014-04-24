@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 public class Monkey extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 4;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,8 +30,8 @@ public class Monkey extends Activity {
 		 File stuff = Environment.getExternalStorageDirectory();
 		    
 		    File thing = new File (stuff.getAbsolutePath());
-		    File file = new File (thing, "ocelotimage.jpg");
-		    String path = stuff + "/ocelotimage.jpg";
+		    File file = new File (thing, "monkeyimage.jpg");
+		    String path = stuff + "/monkeyimage.jpg";
 		    if (file.exists())
 		    {
 		    		Date lastModDate = new Date(file.lastModified());  
@@ -48,12 +48,12 @@ public class Monkey extends Activity {
 		}
 		        public void goToCamera(View arg0)
 		        {
-		        	File directory = new File(Environment.getExternalStorageDirectory(), "ocelotimage.jpg");
-		        	File directory2 = new File(Environment.getExternalStorageDirectory(), "oldocelotimage.jpg");
+		        	File directory = new File(Environment.getExternalStorageDirectory(), "monkeyimage.jpg");
+		        	File directory2 = new File(Environment.getExternalStorageDirectory(), "oldmonkeyimage.jpg");
 		        	if(directory.exists()){
 		        		if (directory2.exists()) {
 		        			directory2.delete();
-		        			File blah = new File(Environment.getExternalStorageDirectory(), "oldocelotimage.jpg");
+		        			File blah = new File(Environment.getExternalStorageDirectory(), "oldmonkeyimage.jpg");
 		        			directory.renameTo(blah);
 		        			directory.delete();
 		        		} else {
@@ -82,11 +82,11 @@ public class Monkey extends Activity {
 	    	    File stuff2 = Environment.getExternalStorageDirectory();
 	    	    
 	    	    File thing2 = new File (stuff2.getAbsolutePath());
-	    	    File file2 = new File (thing2, "oldocelotimage.jpg");
+	    	    File file2 = new File (thing2, "oldmonkeyimage.jpg");
 	    	    if (file2.exists())
 	    	    {
 	    	    
-	      	          String p2 = thing2 + "/oldocelotimage.jpg";
+	      	          String p2 = thing2 + "/oldmonkeyimage.jpg";
 	      	        BitmapFactory.Options opt = new BitmapFactory.Options();
 		            opt.inSampleSize = 8;
 	      	      init = BitmapFactory.decodeFile(p2, opt);
@@ -98,14 +98,14 @@ public class Monkey extends Activity {
 		    	    File stuff = Environment.getExternalStorageDirectory();
 		    	    
 		    	    File thing = new File (stuff.getAbsolutePath());
-		    	    File file = new File (thing, "ocelotimage.jpg");
+		    	    File file = new File (thing, "monkeyimage.jpg");
 		        	  if (file.exists())
 		      	    {
 		      	    		Date lastModDate = new Date(file.lastModified());  
 		      	    		String date = lastModDate.toString();
 		      	            TextView t = (TextView)findViewById(R.id.textView3);  
 		      	            t.setText("Last picture taken on: " + date);
-		      	          String p = thing + "/ocelotimage.jpg";
+		      	          String p = thing + "/monkeyimage.jpg";
 		      	        BitmapFactory.Options opt = new BitmapFactory.Options();
 			            opt.inSampleSize = 8;
 		      	      initial = BitmapFactory.decodeFile(p, opt);
@@ -122,21 +122,23 @@ public class Monkey extends Activity {
 		            		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
 		            //Set the image depending on the counter.
 		            switch (currentImage) {
-		            case 0:  imageI.setImageResource(R.drawable.ocelot);
+		            case 0:  imageI.setImageResource(R.drawable.monkey);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.monkey2);
+                    break;
+		            case 2: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
-		            else { imageI.setImageResource(R.drawable.ocelot);
+		            else { imageI.setImageResource(R.drawable.monkey);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 3: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
-		            else { imageI.setImageResource(R.drawable.ocelot);
+		            else { imageI.setImageResource(R.drawable.monkey);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            default: imageI.setImageResource(R.drawable.ocelot);
+		            default: imageI.setImageResource(R.drawable.monkey);
 		            currentImage = 0;
 		            }
 		            }
@@ -150,8 +152,8 @@ public class Monkey extends Activity {
 	    File stuff = Environment.getExternalStorageDirectory();
 	    
 	    File thing = new File (stuff.getAbsolutePath());
-	    File file = new File (thing, "ocelotimage.jpg");
-	    String path = stuff + "/ocelotimage.jpg";
+	    File file = new File (thing, "monkeyimage.jpg");
+	    String path = stuff + "/monkeyimage.jpg";
 	    if (file.exists())
 	    {
 	    	Date lastModDate = new Date(file.lastModified());  

@@ -26,6 +26,7 @@ public class Hyena extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_hyena);
 		 File stuff = Environment.getExternalStorageDirectory();
 		    
 		    File thing = new File (stuff.getAbsolutePath());
