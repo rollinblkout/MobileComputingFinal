@@ -25,13 +25,13 @@ public class MainActivity extends Activity{
   Drawable a = findViewById(R.id.button1).getBackground();
   Drawable b = findViewById(R.id.button2).getBackground();
   Drawable c = findViewById(R.id.button3).getBackground();
-  Drawable d = findViewById(R.id.button4).getBackground();
-  Drawable e = findViewById(R.id.button5).getBackground();
+  Drawable d = findViewById(R.id.button5).getBackground();
+
   a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
   b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
   c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
   d.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
-  e.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+
   b1.setOnClickListener(animal);
   b2.setOnClickListener(spell);
   b3.setOnClickListener(exit);
