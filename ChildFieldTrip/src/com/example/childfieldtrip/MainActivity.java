@@ -97,7 +97,11 @@ public boolean onOptionsItemSelected(MenuItem item) {
  View.OnClickListener exit = new View.OnClickListener() {
 	
 	 public void onClick(View arg0) {
-		 System.exit(0);
+		 finish();//try activityname.finish instead of this
+		 Intent intent = new Intent(Intent.ACTION_MAIN);
+		 intent.addCategory(Intent.CATEGORY_HOME);
+		 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		 startActivity(intent);
 		 }
 };
 
