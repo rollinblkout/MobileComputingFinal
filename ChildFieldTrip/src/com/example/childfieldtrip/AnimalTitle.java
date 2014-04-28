@@ -18,15 +18,20 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.TextView;
+import android.view.KeyEvent;
 
 
 @SuppressLint("DefaultLocale")
 public class AnimalTitle extends Activity {
 
- @Override
+ @SuppressLint("CutPasteId")
+@Override
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_animal_title);
@@ -45,13 +50,26 @@ public class AnimalTitle extends Activity {
   b2.setOnClickListener(wild);
   b3.setOnClickListener(aquatic);
 
+  EditText view = (EditText)findViewById(R.id.editText1);
+  view.setOnEditorActionListener(exampleListener);
+  
+  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Cheetah","Corn Snake", "Cow"
+		  , "Coyote","Deer","Dog","Dolphin","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
+		  "Hyena","Leopard","Lion","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Reptiles","Rodents","Salmon","Sheep",
+		  "Skunk","Tiger","Turtle","Wolf","Zebra"};
+  ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+          android.R.layout.simple_dropdown_item_1line, list);
+  AutoCompleteTextView textView = (AutoCompleteTextView)
+          findViewById(R.id.editText1);
+  textView.setAdapter(adapter);
+  textView.setThreshold(1);
   
  }
 
 
  
  public void search(View arg0) throws IOException, ClassNotFoundException{
-	 
+
 
 	 String animal = ((EditText)findViewById(R.id.editText1)).getText().toString().toLowerCase();
 	 String animal2 = ((EditText)findViewById(R.id.editText1)).getText().toString();
@@ -71,46 +89,45 @@ public class AnimalTitle extends Activity {
 		s.close();
 		if (list.contains(animal))
 		{
-			
+
 			String output = Character.toUpperCase(animal.charAt(0)) + animal.substring(1);
-			
-			
+
+
 			if ( output.equals("Cornsnake"))
 			{
-				Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the database!", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
 				Intent ti = new Intent(getApplicationContext(),CornSnake.class);
 				startActivity(ti); 
 			} 
-			
+
 			if (!(output.equals("Cornsnake"))){
-			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the database!", Toast.LENGTH_SHORT).show();
-			
+			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
+
 		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
 
 			Intent i = new Intent(getApplicationContext(),clazz);
 
 		startActivity(i); 
-		finish();
 			}
-			
+
 		}
 		else
 		{
-			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the database!", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the app!", Toast.LENGTH_SHORT).show();
 		}
 	}
  View.OnClickListener aquatic = new View.OnClickListener() {
-	
+
 	@Override
 	 public void onClick(View arg0) {
-		
+
 		  Intent i = new Intent(getApplicationContext(),Aquatic.class);
 		  startActivity(i);
 		 }
 };
 
 View.OnClickListener domestic = new View.OnClickListener() {
-	
+
 	@Override
 	 public void onClick(View arg0) {
 		  Intent i = new Intent(getApplicationContext(),Domestic.class);
@@ -119,15 +136,30 @@ View.OnClickListener domestic = new View.OnClickListener() {
 };
 
 View.OnClickListener wild = new View.OnClickListener() {
-	
+
 	@Override
 	 public void onClick(View arg0) {
-		
+
 		  Intent i = new Intent(getApplicationContext(),WildAnimals.class);
 		  startActivity(i);
 		 }
 };
-
+TextView.OnEditorActionListener exampleListener = new TextView.OnEditorActionListener(){
+	
+	public boolean onEditorAction(TextView exampleView, int actionId, KeyEvent event) {
+		   try {
+			search(exampleView);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		   return true;
+		}
+}
+;
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
  // Inflate the menu; this adds items to the action bar if it is present.

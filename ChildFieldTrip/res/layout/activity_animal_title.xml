@@ -30,17 +30,21 @@
         android:textColor="#FFFFFF"
         android:width="200dp" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
+        android:completionThreshold="1"
         android:ems="10" 
+        android:singleLine="true"
         android:hint="@string/search">
 
-    </EditText>
+    </AutoCompleteTextView>
 
     <Button
         android:id="@+id/button4"

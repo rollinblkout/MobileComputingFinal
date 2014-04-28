@@ -13,8 +13,10 @@ Cow
 Coyote
 Deer
 Dog
+Dolphin
 Elephant
 Felines
+Ferret
 Fox
 Gazelle
 Giraffe
@@ -31,6 +33,7 @@ Meerkat
 Monkey
 Mouse
 Ocelot
+Octopus
 Panther
 Parakeet
 Parrot
@@ -40,7 +43,9 @@ Rabbit
 Rat
 Reptiles
 Rodents
+Salmon
 Sheep
+Skunk
 Tiger
 Turtle
 Wolf
