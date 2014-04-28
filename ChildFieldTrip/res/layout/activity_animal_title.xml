@@ -33,16 +33,17 @@
     <AutoCompleteTextView
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
-        android:ellipsize="end"
-        android:lines="1"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button4"
         android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:completionThreshold="1"
-        android:ems="10" 
-        android:singleLine="true"
-        android:hint="@string/search">
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="@string/search"
+        android:lines="1"
+        android:singleLine="true" >
 
     </AutoCompleteTextView>
 
@@ -50,8 +51,9 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
         android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:onClick="search"
         android:text="@string/go"
@@ -77,6 +79,6 @@
         android:layout_marginBottom="21dp"
         android:text="@string/animals"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
 </RelativeLayout>
