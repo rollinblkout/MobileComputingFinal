@@ -308,6 +308,10 @@
             android:name="com.example.childfieldtrip.Skunk"
             android:label="@string/title_activity_skunk" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Definitions"
+            android:label="@string/title_activity_definitions" >
+        </activity>
     </application>
 
 </manifest>

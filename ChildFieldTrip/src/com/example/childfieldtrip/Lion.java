@@ -24,7 +24,7 @@ import android.widget.Toast;
 @SuppressLint("SimpleDateFormat")
 public class Lion extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 4;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

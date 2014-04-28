@@ -22,6 +22,7 @@ public class MainActivity extends Activity{
   Button b1 = (Button) findViewById(R.id.button1);
   Button b2 = (Button) findViewById(R.id.button2);
   Button b3 = (Button) findViewById(R.id.button3);
+  Button b4 = (Button) findViewById(R.id.button5);
   Drawable a = findViewById(R.id.button1).getBackground();
   Drawable b = findViewById(R.id.button2).getBackground();
   Drawable c = findViewById(R.id.button3).getBackground();
@@ -35,6 +36,7 @@ public class MainActivity extends Activity{
   b1.setOnClickListener(animal);
   b2.setOnClickListener(spell);
   b3.setOnClickListener(exit);
+  b4.setOnClickListener(def);
  }
 
 
@@ -93,6 +95,16 @@ public boolean onOptionsItemSelected(MenuItem item) {
 		  startActivity(x);
 	}
 };
+View.OnClickListener def = new View.OnClickListener() {
+	
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		  Intent x = new Intent(getApplicationContext(),Definitions.class);
+		  startActivity(x);
+	}
+};
+
 
  View.OnClickListener exit = new View.OnClickListener() {
 	
