@@ -419,6 +419,8 @@ public final class R {
         public static final int search=0x7f050034;
         public static final int sheep=0x7f050029;
         public static final int sheepinfo=0x7f05007e;
+        public static final int skunk=0x7f0500c5;
+        public static final int skunkinfo=0x7f0500c6;
         public static final int spellgame=0x7f05001c;
         public static final int tiger=0x7f050039;
         public static final int tiger_desc=0x7f05003a;
