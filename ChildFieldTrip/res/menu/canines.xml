@@ -6,29 +6,24 @@
           android:showAsAction="ifRoom" 
           />
     <item android:id="@+id/action_home"
-          android:icon="@drawable/house"
           android:title="@string/home"
           android:showAsAction="ifRoom" 
            />
     
     <item android:id="@+id/action_spell"
-          android:icon="@drawable/pencil"
           android:title="@string/spellgame"
           android:showAsAction="ifRoom" 
            />
 <item android:id="@+id/action_domestic"
-          android:icon="@drawable/caticon"
           android:title="@string/domestic"
           android:showAsAction="ifRoom" 
            />
 
 <item android:id="@+id/action_aquatic"
-          android:icon="@drawable/fish"
           android:title="@string/aquatic"
           android:showAsAction="ifRoom" 
            />
 <item android:id="@+id/action_wild"
-          android:icon="@drawable/tigericon"
           android:title="@string/wild"
           android:showAsAction="ifRoom" 
            />

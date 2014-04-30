@@ -22,19 +22,19 @@ import android.widget.Toast;
 
 public class Groundhog extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 4;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_groundhog);
-		 File stuff = Environment.getExternalStorageDirectory();
+		  File stuff = Environment.getExternalStorageDirectory();
 		    
 		    File thing = new File (stuff.getAbsolutePath());
 		    File file = new File (thing, "groundhogimage.jpg");
 		    String path = stuff + "/groundhogimage.jpg";
 		    if (file.exists())
 		    {
-		    		Date lastModDate = new Date(file.lastModified());  
+		    	Date lastModDate = new Date(file.lastModified());  
 		    		String date = lastModDate.toString();
 		            TextView t = (TextView)findViewById(R.id.textView3); 
 		            BitmapFactory.Options options = new BitmapFactory.Options();
@@ -43,7 +43,7 @@ public class Groundhog extends Activity {
 		    		Bitmap initial = BitmapFactory.decodeFile(path, options);
 		    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
 		    	        imageI.setImageBitmap(initial);
-		   
+		    
 		    }
 		}
 		        public void goToCamera(View arg0)
@@ -85,15 +85,11 @@ public class Groundhog extends Activity {
 	    	    File file2 = new File (thing2, "oldgroundhogimage.jpg");
 	    	    if (file2.exists())
 	    	    {
-	    	    
-	      	          String p2 = thing2 + "/oldgroundhogimage.jpg";
+	    	    	String p2 = thing2 + "/oldgroundhogimage.jpg";
 	      	        BitmapFactory.Options opt = new BitmapFactory.Options();
 		            opt.inSampleSize = 8;
 	      	      init = BitmapFactory.decodeFile(p2, opt);
 	   
-
-	      	    	   
-	      	
 	    	    }
 		    	    File stuff = Environment.getExternalStorageDirectory();
 		    	    
@@ -101,7 +97,7 @@ public class Groundhog extends Activity {
 		    	    File file = new File (thing, "groundhogimage.jpg");
 		        	  if (file.exists())
 		      	    {
-		      	    		Date lastModDate = new Date(file.lastModified());  
+			      	    	Date lastModDate = new Date(file.lastModified());  
 		      	    		String date = lastModDate.toString();
 		      	            TextView t = (TextView)findViewById(R.id.textView3);  
 		      	            t.setText("Last picture taken on: " + date);
@@ -110,9 +106,6 @@ public class Groundhog extends Activity {
 			            opt.inSampleSize = 8;
 		      	      initial = BitmapFactory.decodeFile(p, opt);
 		   
-
-		      	    	   
-		    
 		      	    }
 		 
 		        	  
@@ -124,13 +117,15 @@ public class Groundhog extends Activity {
 		            switch (currentImage) {
 		            case 0:  imageI.setImageResource(R.drawable.groundhog);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.groundhog2);
+		            break;
+		            case 2: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
 		            else { imageI.setImageResource(R.drawable.groundhog);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 3: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
 		            else { imageI.setImageResource(R.drawable.groundhog);
 		            currentImage = 0;
@@ -154,7 +149,7 @@ public class Groundhog extends Activity {
 	    String path = stuff + "/groundhogimage.jpg";
 	    if (file.exists())
 	    {
-	    	Date lastModDate = new Date(file.lastModified());  
+	    		Date lastModDate = new Date(file.lastModified());  
 	    		String date = lastModDate.toString();
 	            TextView t = (TextView)findViewById(R.id.textView3); 
 	            BitmapFactory.Options options = new BitmapFactory.Options();
@@ -163,7 +158,7 @@ public class Groundhog extends Activity {
 	    		Bitmap initial = BitmapFactory.decodeFile(path, options);
 	    		 ImageView imageI =(ImageView) findViewById(R.id.imageView1);
 	    	        imageI.setImageBitmap(initial);
-	    
+	   
 	    }
 	}
 	else 
@@ -174,41 +169,40 @@ public class Groundhog extends Activity {
 
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
-//Inflate the menu; this adds items to the action bar if it is present.
+// Inflate the menu; this adds items to the action bar if it is present.
 	 MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.birds, menu);
 	    return super.onCreateOptionsMenu(menu);
 }
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
-//Handle presses on the action bar items
-switch (item.getItemId()) {
-case R.id.action_back:
-	finish();
-   return true;
-case R.id.action_home:
-	Intent i = new Intent(getApplicationContext(),MainActivity.class);
+  // Handle presses on the action bar items
+  switch (item.getItemId()) {
+      case R.id.action_back:
+      	finish();
+          return true;
+      case R.id.action_home:
+      	Intent i = new Intent(getApplicationContext(),MainActivity.class);
 		  startActivity(i);
-   return true;
-case R.id.action_spell:
-	Intent c = new Intent(getApplicationContext(),GuessImage.class);
+          return true;
+      case R.id.action_spell:
+      	Intent c = new Intent(getApplicationContext(),GuessImage.class);
 		  startActivity(c);
 		  return true;
-case R.id.action_domestic:
-	Intent d = new Intent(getApplicationContext(),Domestic.class);
+      case R.id.action_domestic:
+      	Intent d = new Intent(getApplicationContext(),Domestic.class);
 		  startActivity(d);
 		  return true;
-case R.id.action_aquatic:
-	Intent a = new Intent(getApplicationContext(),Aquatic.class);
+      case R.id.action_aquatic:
+      	Intent a = new Intent(getApplicationContext(),Aquatic.class);
 		  startActivity(a);
 		  return true;
-case R.id.action_wild:
-	Intent x = new Intent(getApplicationContext(),WildAnimals.class);
+      case R.id.action_wild:
+      	Intent x = new Intent(getApplicationContext(),WildAnimals.class);
 		  startActivity(x);
 		  return true;
-default:
-   return super.onOptionsItemSelected(item);
+      default:
+          return super.onOptionsItemSelected(item);
+  }
 }
 }
-}
-
