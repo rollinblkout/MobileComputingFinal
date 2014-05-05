@@ -2,9 +2,7 @@ package com.example.childfieldtrip;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.util.Log;
 import android.view.Menu;
-import android.widget.TextView;
 
 public class ImageGuess extends Activity {
 

@@ -4,8 +4,6 @@ package com.example.childfieldtrip;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
