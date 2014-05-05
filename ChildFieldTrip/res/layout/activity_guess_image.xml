@@ -1,6 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#C5E3BF"
+    android:background="@color/backgroundcolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -13,7 +13,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textcolor"
         android:text="Enter an animal name to guess!" />
 
     <Button
@@ -25,7 +25,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
         android:layout_marginLeft="32dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textcolor"
         android:text="Check" />
 
     <Button
@@ -36,7 +36,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/button1"
         android:layout_marginRight="52dp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textcolor"
         android:text="Next" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button1"
         android:layout_alignRight="@+id/editText1"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textcolor"
         android:text="Incorrect"
         android:visibility="invisible" />
 
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textcolor"
         android:text="Correct"
         android:visibility="invisible" />
 

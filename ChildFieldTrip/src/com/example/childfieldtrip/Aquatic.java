@@ -20,16 +20,12 @@ public class Aquatic extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_aquatic);
-		  Drawable a = findViewById(R.id.button1).getBackground();
-		  Drawable b = findViewById(R.id.button2).getBackground();
-		  Drawable c = findViewById(R.id.button3).getBackground();
+
 		  Button b1 = (Button) findViewById(R.id.button1);
 		  Button b2 = (Button) findViewById(R.id.button2);
 		  Button b3 = (Button) findViewById(R.id.button3);
 		  
-		  a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
-		  b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
-		  c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+
 		  b1.setOnClickListener(fresh);
 		  b2.setOnClickListener(sea);
 		  b3.setOnClickListener(amp);

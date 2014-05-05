@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#C5E3BF"
+    android:background="@color/backgroundcolor"
     tools:context=".Alligator" >
 
  <TextView
@@ -16,7 +16,7 @@
      android:layout_alignParentTop="true"
      android:layout_centerHorizontal="true"
      android:text="@string/alligator"
-     android:textColor="#FFFFFF"
+     android:textColor="@color/textcolor"
      android:textSize="17sp" />
 
     <ImageView
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFFFFF"
+            android:textColor="@color/textcolor"
         android:textSize="12sp" />
 
 </RelativeLayout>
