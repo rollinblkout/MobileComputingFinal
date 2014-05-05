@@ -3,6 +3,7 @@ package com.example.childfieldtrip;
 
 
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.PorterDuff;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+@SuppressLint("NewApi")
 public class MainActivity extends Activity{
 
  @Override
@@ -37,6 +39,8 @@ public class MainActivity extends Activity{
   b2.setOnClickListener(spell);
   b3.setOnClickListener(exit);
   b4.setOnClickListener(def);
+  
+
  }
 
 

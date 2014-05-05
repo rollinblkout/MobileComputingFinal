@@ -1,84 +1,87 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-        android:background="#C5E3BF"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+      android:paddingTop="50dp"
+     android:paddingLeft="65dp"
+ 
+        android:background="@color/backgroundcolor"
+    android:orientation="vertical"
     tools:context=".Domestic" >
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="63dp"
-        android:textColor="#FFFFFF"
-        android:text="@string/birds"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button5"
-        android:textColor="#FFFFFF"
-        android:layout_centerHorizontal="true"
-        android:text="@string/rodents"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:textColor="#FFFFFF"
-        android:layout_centerHorizontal="true"
-        android:text="@string/farmanimals"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-       android:textColor="#FFFFFF"
-        android:layout_alignLeft="@+id/button6"
-        android:text="@string/felines"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignRight="@+id/button2"
-        android:textColor="#FFFFFF"
-        android:text="@string/canines"
-        android:width="200dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button4"
-        android:layout_alignRight="@+id/button1"
-        android:textColor="#FFFFFF"
-        android:text="@string/reptiles"
-        android:width="200dp" />
-
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button6"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp"
-        android:text="@string/domestic"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+ android:id="@+id/textView1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginRight="20dp"
+android:paddingLeft="53dp"
+android:paddingBottom="10dp"
+  android:text="@string/domestic"
+android:textColor="@color/textcolor"
+        android:textSize="18sp"
+/>
+ 
+<Button
+android:id="@+id/button1"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/canines"
+   android:textColor="@color/textcolor"
+/>
+    <Button
+android:id="@+id/button2"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/felines"
+       android:textColor="@color/textcolor"
+/>
+    
+    <Button
+android:id="@+id/button3"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/reptiles"
+   android:textColor="@color/textcolor"
+/>
+    <Button
+android:id="@+id/button4"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/rodents"
+       android:textColor="@color/textcolor"
+/>
+ <Button
+android:id="@+id/button5"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/birds"
+   android:textColor="@color/textcolor"
+/>
+    <Button
+android:id="@+id/button6"
+android:layout_width="180dp"
+android:layout_height="50dp"
+android:layout_marginRight="20dp"
+android:layout_marginBottom="5dp"
+  android:background="@color/buttoncolor"
+        android:text="@string/farmanimals"
+       android:textColor="@color/textcolor"
+/>
 
-</RelativeLayout>
+</LinearLayout>

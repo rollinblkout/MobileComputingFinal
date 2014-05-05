@@ -35,17 +35,11 @@ public class AnimalTitle extends Activity {
  protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.activity_animal_title);
-  Drawable a = findViewById(R.id.button1).getBackground();
-  Drawable b = findViewById(R.id.button2).getBackground();
-  Drawable c = findViewById(R.id.button3).getBackground();
-  Drawable d = findViewById(R.id.button4).getBackground();
+
  Button b1 = (Button) findViewById(R.id.button1);
  Button b2 = (Button) findViewById(R.id.button2);
  Button b3 = (Button) findViewById(R.id.button3);
- a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
- b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
- c.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
- d.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
+
   b1.setOnClickListener(domestic);
   b2.setOnClickListener(wild);
   b3.setOnClickListener(aquatic);
@@ -72,6 +66,8 @@ public class AnimalTitle extends Activity {
 
 
 	 String animal = ((EditText)findViewById(R.id.editText1)).getText().toString().toLowerCase();
+	  AutoCompleteTextView editText = (AutoCompleteTextView)
+	          findViewById(R.id.editText1);
 	 String animal2 = ((EditText)findViewById(R.id.editText1)).getText().toString();
 	 animal = animal.replaceAll(" ", "");
 	 Scanner s = new Scanner(getAssets().open("animalsearch.txt"));
@@ -106,14 +102,16 @@ public class AnimalTitle extends Activity {
 		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
 
 			Intent i = new Intent(getApplicationContext(),clazz);
-
+			editText.setText("");
 		startActivity(i); 
+		
 			}
 
 		}
 		else
 		{
 			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the app!", Toast.LENGTH_SHORT).show();
+			editText.setText("");
 		}
 	}
  View.OnClickListener aquatic = new View.OnClickListener() {
