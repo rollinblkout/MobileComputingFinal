@@ -312,6 +312,26 @@
             android:name="com.example.childfieldtrip.Definitions"
             android:label="@string/title_activity_definitions" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Rattlesnamke"
+            android:label="@string/title_activity_rattlesnamke" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Crocodile"
+            android:label="@string/title_activity_crocodile" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Chameleon"
+            android:label="@string/title_activity_chameleon" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Iguana"
+            android:label="@string/title_activity_iguana" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Lizard"
+            android:label="@string/title_activity_lizard" >
+        </activity>
     </application>
 
 </manifest>

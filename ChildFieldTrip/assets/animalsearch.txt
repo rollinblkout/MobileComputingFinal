@@ -7,10 +7,12 @@ Birds
 Canines
 Capybara
 Cat
+Chameleon
 Cheetah
 Cornsnake
 Cow
 Coyote
+Crocodile
 Deer
 Dog
 Dolphin
@@ -27,8 +29,10 @@ Hamster
 Hippo
 Horse
 Hyena
+Iguana
 Leopard
 Lion
+Lizard
 Meerkat
 Monkey
 Mouse
@@ -41,6 +45,7 @@ Penguin
 Pig
 Rabbit
 Rat
+Rattlesnake
 Reptiles
 Rodents
 Salmon

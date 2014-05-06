@@ -26,7 +26,6 @@
         <item>Reptile</item>
         <item>Rodent</item>
     </string-array>
-    
     <string-array name="farm">
         <item>Cow</item>
         <item>Horse</item>
@@ -285,7 +284,20 @@
     <string name="title_activity_definitions">Definitions</string>
     <string name="skunk">Skunk</string>
     <string name="skunkinfo">Skunks spray a strong smelling liquid. They are omnivores and have very poor eyesight. When they are not breeding they are very solitary. </string>
-
-
+    <string name="title_activity_rattlesnamke">Rattlesnamke</string>
+    <string name="rattlesnake">Rattlesnake</string>
+    <string name="rattlesnake_desc">Rattlesnakes are very venomous and dangerous snakes in the world. They care mainly found in the Americas ranging from Canada to Central Argentina.</string>
+    <string name="title_activity_crocodile">Crocodile</string>
+    <string name="crocodile">Crocodile</string>
+    <string name="crocodile_desc">Crocodiles are equatic reptiles. They are largely found in Asia, the Americas, Africa, and Australia.</string>
+    <string name="title_activity_chameleon">Chameleon</string>
+    <string name="chameleon">Chameleon</string>
+    <string name="chameleon_desc">Chameleons are part of lizard family. Their species varies with their colors and there are 160 species in total. Some Chameleons have the ability to change their colors. </string>
+    <string name="title_activity_iguana">Iguana</string>
+    <string name="iguana">Iguana</string>
+    <string name="iguana_desc">Iguana is an herbivorous lizards. They are mainly found Central America, Mexico, Caribbean, Fiji and Tonga islands. </string>
+    <string name="title_activity_lizard">Lizard</string>
+    <string name="lizard">Lizard</string>
+    <string name="lizard_desc">Lizards are squamate reptiles. They can be found in every part of the world except Antartica. Lizards normally have external ears and feet.</string>
 
 </resources>
