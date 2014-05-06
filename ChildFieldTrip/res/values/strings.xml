@@ -299,5 +299,14 @@
     <string name="title_activity_lizard">Lizard</string>
     <string name="lizard">Lizard</string>
     <string name="lizard_desc">Lizards are squamate reptiles. They can be found in every part of the world except Antartica. Lizards normally have external ears and feet.</string>
+    <string name="title_activity_duck">Duck</string>
+    <string name="duck">Duck</string>
+    <string name="duck_desc">Duck is the common name for a large number of species in the Anatidae family of birds, which also includes swans and geese. The ducks are divided among several subfamilies in the Anatidae family.</string>
+    <string name="title_activity_eagle">Eagle</string>
+    <string name="eagle">Eagle</string>
+    <string name="eagle_desc">Eagle is a common name for some members of the bird family Accipitridae; it belongs to several genera that are not necessarily closely related to each other.</string>
+    <string name="title_activity_seagull">Seagull</string>
+    <string name="seagull">Seagull</string>
+    <string name="seagull_desc">Seagulls are typically medium to large birds, usually grey or white, often with black markings on the head or wings. They typically have harsh wailing or squawking calls, stout, longish bills, and webbed feet.</string>
 
 </resources>

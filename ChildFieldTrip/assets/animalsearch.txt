@@ -16,6 +16,8 @@ Crocodile
 Deer
 Dog
 Dolphin
+Duck
+Eagle
 Elephant
 Felines
 Ferret
@@ -49,6 +51,7 @@ Rattlesnake
 Reptiles
 Rodents
 Salmon
+Seagull
 Sheep
 Skunk
 Tiger
