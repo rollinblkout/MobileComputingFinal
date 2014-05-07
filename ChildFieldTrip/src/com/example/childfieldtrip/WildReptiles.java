@@ -25,13 +25,37 @@ ListView Rep;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Alligator"};
+				String[] items = { "Alligator","Chameleon","Crocodile","Iguana","Lizard", "Rattlesnake"};
 				if (items[position].equals("Alligator")){
 					
 						Intent i = new Intent(getApplicationContext(),Alligator.class);
 						startActivity(i);
 				}
-		
+				if (items[position].equals("Chameleon")){
+					
+					Intent i = new Intent(getApplicationContext(),Chameleon.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Crocodile")){
+					
+					Intent i = new Intent(getApplicationContext(),Crocodile.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Iguana")){
+					
+					Intent i = new Intent(getApplicationContext(),Iguana.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Lizard")){
+					
+					Intent i = new Intent(getApplicationContext(),Lizard.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Rattlesnake")){
+					
+					Intent i = new Intent(getApplicationContext(),Rattlesnamke.class);
+					startActivity(i);
+			}
 					
 			}
 		});

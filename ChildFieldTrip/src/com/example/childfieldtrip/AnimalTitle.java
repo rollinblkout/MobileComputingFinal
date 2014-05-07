@@ -46,9 +46,9 @@ public class AnimalTitle extends Activity {
   EditText view = (EditText)findViewById(R.id.editText1);
   view.setOnEditorActionListener(exampleListener);
   
-  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Cheetah","Corn Snake", "Cow"
-		  , "Coyote","Deer","Dog","Dolphin","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
-		  "Hyena","Leopard","Lion","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Reptiles","Rodents","Salmon","Sheep",
+  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Chameleon","Cheetah","Corn Snake", "Cow"
+		  , "Coyote", "Crocodile","Deer","Dog","Dolphin","Duck","Eagle","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
+		  "Hyena","Iguana","Leopard","Lion","Lizard","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Rattlesnake","Reptiles","Rodents","Salmon","Seagull","Sheep",
 		  "Skunk","Tiger","Turtle","Wolf","Zebra"};
   ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
           android.R.layout.simple_dropdown_item_1line, list);
@@ -96,6 +96,13 @@ public class AnimalTitle extends Activity {
 			} 
 
 			if (!(output.equals("Cornsnake"))){
+				
+				if (output.equals("Rattlesnake")){
+					Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
+					Intent tii = new Intent(getApplicationContext(),Rattlesnamke.class);
+					startActivity(tii); 
+				}
+				if (!(output.equals("Rattlesnake"))){
 			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
 
 		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
@@ -103,6 +110,7 @@ public class AnimalTitle extends Activity {
 			Intent i = new Intent(getApplicationContext(),clazz);
 			editText.setText("");
 		startActivity(i); 
+				}
 		
 			}
 

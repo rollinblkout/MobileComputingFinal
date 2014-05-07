@@ -86,9 +86,17 @@
     </string-array>
     <string-array name="wildreptiles">
         <item>Alligator</item>
+        <item>Chameleon</item>
+        <item>Crocodile</item>
+        <item>Iguana</item>
+        <item>Lizard</item>
+        <item>Rattlesnake</item>
     </string-array>
     <string-array name="wildbirds">
+        <item>Duck</item>
+        <item>Eagle</item>
         <item>Penguin</item>
+        <item>Seagull</item>
     </string-array>
     <string-array name="wildcanines">
         <item>Coyote</item>

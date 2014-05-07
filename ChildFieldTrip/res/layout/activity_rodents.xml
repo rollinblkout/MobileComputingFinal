@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:text="@string/choose"
+        android:text="@string/rodents"
         android:textColor="@color/textcolor"
         android:textSize="17sp" />
 

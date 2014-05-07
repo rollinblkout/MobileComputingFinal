@@ -24,13 +24,27 @@ ListView Birds;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Penguin"};
+				String[] items = { "Duck", "Eagle","Penguin", "Seagull"};
 				if (items[position].equals("Penguin")){
 					
 						Intent i = new Intent(getApplicationContext(),Penguin.class);
 						startActivity(i);
 				}
-		
+				if (items[position].equals("Duck")){
+					
+					Intent i = new Intent(getApplicationContext(),Duck.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Eagle")){
+					
+					Intent i = new Intent(getApplicationContext(),Eagle.class);
+					startActivity(i);
+			}
+				if (items[position].equals("Seagull")){
+					
+					Intent i = new Intent(getApplicationContext(),Seagull.class);
+					startActivity(i);
+			}
 					
 			}
 		});
