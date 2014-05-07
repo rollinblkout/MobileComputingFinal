@@ -9,8 +9,7 @@ import java.util.Scanner;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -30,11 +29,7 @@ public class GuessImage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_guess_image);
 		
-		  Drawable a = findViewById(R.id.button1).getBackground();
-		  Drawable b = findViewById(R.id.button2).getBackground();
 
-		  a.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);  
-		  b.setColorFilter(0xFFecec6a, PorterDuff.Mode.DARKEN);   
 
 		final EditText guess = (EditText) findViewById(R.id.editText1);
 		final TextView correct=(TextView) findViewById(R.id.textView2);
