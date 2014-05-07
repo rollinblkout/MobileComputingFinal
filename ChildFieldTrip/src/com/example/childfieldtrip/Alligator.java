@@ -75,8 +75,14 @@ public class Alligator extends Activity {
 		        		}
 		        	Uri image = Uri.fromFile(directory);
 		            Intent Intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+		            if (MediaStore.EXTRA_OUTPUT != null){
 		            Intent.putExtra(MediaStore.EXTRA_OUTPUT, image);
 		            startActivityForResult(Intent, 5);
+		            } else
+		            {
+		            	Intent e = new Intent(getApplicationContext(),Alligator.class);
+		            	startActivityForResult(e, 0);
+		            }
 		        }
 	      
 		        public void onPictureClick(View v) {

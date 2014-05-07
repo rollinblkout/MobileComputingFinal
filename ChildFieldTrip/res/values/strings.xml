@@ -48,6 +48,7 @@
     </string-array>
     <string-array name="rod">
         <item>Guinea Pig</item>
+        <item>Ferret</item>
         <item>Hamster</item>
         <item>Mouse</item>
         <item>Rabbit</item>
@@ -69,6 +70,7 @@
         <item>Gorilla</item>
         <item>Hippo</item>
         <item>Monkey</item>
+        <item>Skunk</item>
         <item>Zebra</item>
     </string-array>
     <string-array name="wildfelines">
