@@ -9,9 +9,12 @@ Capybara
 Cat
 Chameleon
 Cheetah
+Chicken
+Clown Fish
 Cornsnake
 Cow
 Coyote
+Crab
 Crocodile
 Deer
 Dog
@@ -24,6 +27,7 @@ Ferret
 Fox
 Gazelle
 Giraffe
+Goldfish
 Gorilla
 Groundhog
 Guineapig
@@ -35,6 +39,7 @@ Iguana
 Leopard
 Lion
 Lizard
+Lobster
 Meerkat
 Monkey
 Mouse
@@ -51,10 +56,14 @@ Rattlesnake
 Reptiles
 Rodents
 Salmon
+Sea Turtle
 Seagull
+Shark
 Sheep
 Skunk
 Tiger
+Toad
 Turtle
+Whale
 Wolf
 Zebra

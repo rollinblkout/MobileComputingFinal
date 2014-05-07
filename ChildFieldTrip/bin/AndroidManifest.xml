@@ -344,6 +344,42 @@
             android:name="com.example.childfieldtrip.Seagull"
             android:label="@string/title_activity_seagull" >
         </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Chicken"
+            android:label="@string/title_activity_chicken" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Goldfish"
+            android:label="@string/title_activity_goldfish" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Shark"
+            android:label="@string/title_activity_shark" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.SeaTurtle"
+            android:label="@string/title_activity_sea_turtle" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Whale"
+            android:label="@string/title_activity_whale" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.ClownFish"
+            android:label="@string/title_activity_clown_fish" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Lobster"
+            android:label="@string/title_activity_lobster" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Crab"
+            android:label="@string/title_activity_crab" >
+        </activity>
+        <activity
+            android:name="com.example.childfieldtrip.Toad"
+            android:label="@string/title_activity_toad" >
+        </activity>
     </application>
 
 </manifest>
