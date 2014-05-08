@@ -25,13 +25,17 @@ ListView Fresh;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Salmon"};
+				String[] items = { "Goldfish","Salmon"};
 				if (items[position].equals("Salmon")){
 					
 						Intent i = new Intent(getApplicationContext(), Salmon.class);
 						startActivity(i);
 				}
-		
+		if (items[position].equals("Goldfish")){
+					
+					Intent i = new Intent(getApplicationContext(), Goldfish.class);
+					startActivity(i);
+			}
 					
 			}
 		});

@@ -46,10 +46,10 @@ public class AnimalTitle extends Activity {
   EditText view = (EditText)findViewById(R.id.editText1);
   view.setOnEditorActionListener(exampleListener);
   
-  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Chameleon","Cheetah","Corn Snake", "Cow"
-		  , "Coyote", "Crocodile","Deer","Dog","Dolphin","Duck","Eagle","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
-		  "Hyena","Iguana","Leopard","Lion","Lizard","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Rattlesnake","Reptiles","Rodents","Salmon","Seagull","Sheep",
-		  "Skunk","Tiger","Turtle","Wolf","Zebra"};
+  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Chameleon","Cheetah", "Chicken", "ClownFish","Corn Snake", "Cow"
+		  , "Coyote", "Crab","Crocodile","Deer","Dog","Dolphin","Duck","Eagle","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Goldfish","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
+		  "Hyena","Iguana","Leopard","Lion","Lizard","Lobster","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Rattlesnake","Reptiles","Rodents","Salmon","SeaTurtle","Seagull","Shark","Sheep",
+		  "Skunk","Tiger","Toad","Turtle","Whale","Wolf","Zebra"};
   ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
           android.R.layout.simple_dropdown_item_1line, list);
   AutoCompleteTextView textView = (AutoCompleteTextView)

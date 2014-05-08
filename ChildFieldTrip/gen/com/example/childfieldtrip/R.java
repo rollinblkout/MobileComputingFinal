@@ -148,12 +148,13 @@ public final class R {
         public static final int tiger=0x7f020067;
         public static final int tiger2=0x7f020068;
         public static final int tigericon=0x7f020069;
-        public static final int turtle=0x7f02006a;
-        public static final int whale=0x7f02006b;
-        public static final int wolf=0x7f02006c;
-        public static final int wolf2=0x7f02006d;
-        public static final int wolf3=0x7f02006e;
-        public static final int zebra=0x7f02006f;
+        public static final int toad=0x7f02006a;
+        public static final int turtle=0x7f02006b;
+        public static final int whale=0x7f02006c;
+        public static final int wolf=0x7f02006d;
+        public static final int wolf2=0x7f02006e;
+        public static final int wolf3=0x7f02006f;
+        public static final int zebra=0x7f020070;
     }
     public static final class id {
         public static final int action_aquatic=0x7f0a001c;
@@ -265,14 +266,15 @@ public final class R {
         public static final int activity_skunk=0x7f03004a;
         public static final int activity_spell_game=0x7f03004b;
         public static final int activity_tiger=0x7f03004c;
-        public static final int activity_turtle=0x7f03004d;
-        public static final int activity_whale=0x7f03004e;
-        public static final int activity_wild_animals=0x7f03004f;
-        public static final int activity_wild_birds=0x7f030050;
-        public static final int activity_wild_reptiles=0x7f030051;
-        public static final int activity_wild_rodents=0x7f030052;
-        public static final int activity_wolf=0x7f030053;
-        public static final int activity_zebra=0x7f030054;
+        public static final int activity_toad=0x7f03004d;
+        public static final int activity_turtle=0x7f03004e;
+        public static final int activity_whale=0x7f03004f;
+        public static final int activity_wild_animals=0x7f030050;
+        public static final int activity_wild_birds=0x7f030051;
+        public static final int activity_wild_reptiles=0x7f030052;
+        public static final int activity_wild_rodents=0x7f030053;
+        public static final int activity_wolf=0x7f030054;
+        public static final int activity_zebra=0x7f030055;
     }
     public static final class menu {
         public static final int alligator=0x7f090000;
@@ -354,14 +356,15 @@ public final class R {
         public static final int skunk=0x7f09004c;
         public static final int spell_game=0x7f09004d;
         public static final int tiger=0x7f09004e;
-        public static final int turtle=0x7f09004f;
-        public static final int whale=0x7f090050;
-        public static final int wild_animals=0x7f090051;
-        public static final int wild_birds=0x7f090052;
-        public static final int wild_reptiles=0x7f090053;
-        public static final int wild_rodents=0x7f090054;
-        public static final int wolf=0x7f090055;
-        public static final int zebra=0x7f090056;
+        public static final int toad=0x7f09004f;
+        public static final int turtle=0x7f090050;
+        public static final int whale=0x7f090051;
+        public static final int wild_animals=0x7f090052;
+        public static final int wild_birds=0x7f090053;
+        public static final int wild_reptiles=0x7f090054;
+        public static final int wild_rodents=0x7f090055;
+        public static final int wolf=0x7f090056;
+        public static final int zebra=0x7f090057;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -592,6 +595,7 @@ public final class R {
         public static final int title_activity_skunk=0x7f0500c3;
         public static final int title_activity_spell_game=0x7f050080;
         public static final int title_activity_tiger=0x7f050038;
+        public static final int title_activity_toad=0x7f0500f7;
         public static final int title_activity_turtle=0x7f050012;
         public static final int title_activity_whale=0x7f0500eb;
         public static final int title_activity_wild_animals=0x7f050056;
@@ -600,6 +604,8 @@ public final class R {
         public static final int title_activity_wild_rodents=0x7f05005b;
         public static final int title_activity_wolf=0x7f05006a;
         public static final int title_activity_zebra=0x7f050041;
+        public static final int toad=0x7f0500f8;
+        public static final int toad_desc=0x7f0500f9;
         public static final int turtle=0x7f050026;
         public static final int turtleinfo=0x7f05007f;
         public static final int welcome=0x7f05001a;

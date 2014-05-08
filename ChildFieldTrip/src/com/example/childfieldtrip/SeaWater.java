@@ -26,7 +26,7 @@ ListView Sea;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Dolphin","Octopus"};
+				String[] items = { "Clown fish", "Crab","Dolphin","Lobster","Octopus", "Sea Turtle", "Shark","Whale"};
 				if (items[position].equals("Dolphin")){
 					
 						Intent i = new Intent(getApplicationContext(), Dolphin.class);
@@ -37,6 +37,36 @@ ListView Sea;
 					Intent i = new Intent(getApplicationContext(), Octopus.class);
 					startActivity(i);
 			}
+		if (items[position].equals("Clown fish")){
+					
+					Intent i = new Intent(getApplicationContext(), ClownFish.class);
+					startActivity(i);
+			}
+		if (items[position].equals("Crab")){
+			
+			Intent i = new Intent(getApplicationContext(), Crab.class);
+			startActivity(i);
+	}
+		if (items[position].equals("Lobster")){
+			
+			Intent i = new Intent(getApplicationContext(), Lobster.class);
+			startActivity(i);
+	}
+		if (items[position].equals("Sea Turtle")){
+			
+			Intent i = new Intent(getApplicationContext(), SeaTurtle.class);
+			startActivity(i);
+	}
+		if (items[position].equals("Shark")){
+			
+			Intent i = new Intent(getApplicationContext(), Shark.class);
+			startActivity(i);
+	}
+		if (items[position].equals("Whale")){
+			
+			Intent i = new Intent(getApplicationContext(), Whale.class);
+			startActivity(i);
+	}
 					
 			}
 		});

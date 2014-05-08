@@ -27,12 +27,18 @@ ListView Amp;
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				String[] items = { "Frog"};
+				String[] items = { "Frog", "Toad"};
 				if (items[position].equals("Frog")){
 					
 						Intent i = new Intent(getApplicationContext(), Frog.class);
 						startActivity(i);
 				}
+				
+		if (items[position].equals("Toad")){
+					
+					Intent i = new Intent(getApplicationContext(), Toad.class);
+					startActivity(i);
+			}
 		
 					
 			}
