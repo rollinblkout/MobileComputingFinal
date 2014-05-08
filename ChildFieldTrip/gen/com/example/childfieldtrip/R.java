@@ -29,6 +29,7 @@ public final class R {
     public static final class color {
         public static final int backgroundcolor=0x7f080001;
         public static final int buttoncolor=0x7f080002;
+        public static final int buttontextcolor=0x7f080003;
         public static final int textcolor=0x7f080000;
     }
     public static final class dimen {

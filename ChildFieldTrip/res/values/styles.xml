@@ -16,7 +16,8 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-<color name="textcolor">#580ead</color>
+<color name="textcolor">#ffffff</color>
 <color name="backgroundcolor">#00B358</color>
-<color name="buttoncolor">#FFDB00</color>
+<color name="buttoncolor">#ffd965</color>
+<color name="buttontextcolor">#000000</color>
 </resources>

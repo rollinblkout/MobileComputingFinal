@@ -11,9 +11,14 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/textcolor"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+                android:textColor="@color/textcolor"
+        android:textSize="24sp"
         android:text="Enter an animal name to guess!" />
 
     <Button
@@ -26,7 +31,7 @@
           android:background="@color/buttoncolor"
         android:layout_marginBottom="60dp"
         android:layout_marginLeft="32dp"
-        android:textColor="@color/textcolor"
+        android:textColor="@color/buttontextcolor"
         android:text="Check" />
 
     <Button
@@ -38,7 +43,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/button1"
         android:layout_marginRight="52dp"
-        android:textColor="@color/textcolor"
+        android:textColor="@color/buttontextcolor"
         android:text="Next" />
 
     <TextView
@@ -68,10 +73,11 @@
            android:ellipsize="end"
         android:lines="1"
          android:singleLine="true"
+         android:background="@color/buttoncolor"
         android:layout_alignBottom="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:textColor="#C5E3BF" />
+        android:textColor="@color/buttontextcolor" />
 
     <ImageView
         android:id="@+id/imageView1"

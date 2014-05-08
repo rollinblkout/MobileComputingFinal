@@ -11,14 +11,16 @@
 
         <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+                android:textColor="@color/textcolor"
+        android:textSize="24sp"
         android:text="@string/definitions"
-        android:textColor="@color/textcolor"
-        android:textSize="17sp" />
+        />
 
     <ListView
         android:id="@+id/lvdef"

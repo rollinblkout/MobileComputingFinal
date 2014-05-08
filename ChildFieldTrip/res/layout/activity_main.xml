@@ -4,76 +4,74 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundcolor"
     android:orientation="vertical"
-    android:paddingLeft="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
     android:paddingTop="50dp"
     tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="239dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
         android:gravity="center"
         android:paddingBottom="10dp"
-        android:paddingLeft="50dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/welcome"
+        android:textStyle="bold"
         android:textColor="@color/textcolor"
-        android:textSize="18sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="180dp"
+        android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="45dp"
         android:background="@color/buttoncolor"
+        android:gravity="center"
         android:text="@string/animals"
-        android:textColor="@color/textcolor" />
+        android:textColor="@color/buttontextcolor"  />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="180dp"
+        android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="45dp"
         android:background="@color/buttoncolor"
+        android:gravity="center"
+        android:textColor="@color/buttontextcolor" 
         android:text="@string/definitions"
-        android:textColor="@color/textcolor" />
+       />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="180dp"
+        android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="45dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginRight="20dp"
         android:background="@color/buttoncolor"
-        
+        android:gravity="center"
+        android:textColor="@color/buttontextcolor" 
         android:text="@string/spellgame"
-        android:textColor="@color/textcolor" />
+         />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="180dp"
+               android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginBottom="120dp"
-        android:layout_marginRight="20dp"
         android:background="@color/buttoncolor"
+        android:gravity="center"
+        android:textColor="@color/buttontextcolor" 
+        android:layout_marginBottom="60dp"
        android:text="@string/exit"
-        android:textColor="@color/textcolor" />
+         />
 
     <TextView
       android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-        android:layout_height="0dip"
-  
-        android:layout_weight="0.16"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textColor="@color/textcolor" 
         android:text="@string/wiki"
-        
-        android:textColor="@color/textcolor"
         android:textSize="12sp" >
     </TextView>
 

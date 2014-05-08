@@ -17,7 +17,7 @@
      android:layout_centerHorizontal="true"
      android:text="@string/gazelle"
      android:textColor="@color/textcolor"
-     android:textSize="17sp" />
+     android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView1"
