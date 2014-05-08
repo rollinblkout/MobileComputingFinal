@@ -27,6 +27,7 @@
         <item>Rodent</item>
     </string-array>
     <string-array name="farm">
+        <item>Chicken</item>
         <item>Cow</item>
         <item>Horse</item>
         <item>Pig</item>
@@ -34,13 +35,21 @@
     </string-array>
     <string-array name="amp">
         <item>Frog</item>
+        <item>Toad</item>
     </string-array>
     <string-array name="freshlv">
+        <item>Goldfish</item>
         <item>Salmon</item>
     </string-array>
     <string-array name="sealv">
+        <item>Clown fish</item>
+        <item>Crab</item>
         <item>Dolphin</item>
+        <item>Lobster</item>
         <item>Octopus</item>
+        <item>Sea turtle</item>
+        <item>Shark</item>
+        <item>Whale</item>
     </string-array>
     <string-array name="rep">
         <item>Corn Snake</item>

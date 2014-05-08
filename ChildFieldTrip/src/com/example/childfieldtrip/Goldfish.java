@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 public class Goldfish extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 5;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -124,13 +124,17 @@ public class Goldfish extends Activity {
 		            switch (currentImage) {
 		            case 0:  imageI.setImageResource(R.drawable.goldfish);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.goldfish2);
+                    break;
+		            case 2:  imageI.setImageResource(R.drawable.goldfish3);
+                    break;
+		            case 3: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
 		            else { imageI.setImageResource(R.drawable.goldfish);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 4: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
 		            else { imageI.setImageResource(R.drawable.goldfish);
 		            currentImage = 0;

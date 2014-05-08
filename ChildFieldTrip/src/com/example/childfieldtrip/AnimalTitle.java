@@ -46,9 +46,9 @@ public class AnimalTitle extends Activity {
   EditText view = (EditText)findViewById(R.id.editText1);
   view.setOnEditorActionListener(exampleListener);
   
-  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Chameleon","Cheetah", "Chicken", "ClownFish","Corn Snake", "Cow"
+  String[] list = {"Alligator","Baboon","Bear","Boar","Buffalo","Birds","Canines","Capybara","Cat","Chameleon","Cheetah", "Chicken", "Clown Fish","Corn Snake", "Cow"
 		  , "Coyote", "Crab","Crocodile","Deer","Dog","Dolphin","Duck","Eagle","Elephant","Felines","Ferret","Fox","Gazelle","Giraffe","Goldfish","Gorilla","Groundhog","Guineapig","Hamster","Hippo","Horse",
-		  "Hyena","Iguana","Leopard","Lion","Lizard","Lobster","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Rattlesnake","Reptiles","Rodents","Salmon","SeaTurtle","Seagull","Shark","Sheep",
+		  "Hyena","Iguana","Leopard","Lion","Lizard","Lobster","Meerkat","Monkey","Mouse","Ocelot","Octopus","Panther","Parakeet","Parrot", "Penguin","Pig","Rabbit","Rat","Rattlesnake","Reptiles","Rodents","Salmon","Sea Turtle","Seagull","Shark","Sheep",
 		  "Skunk","Tiger","Toad","Turtle","Whale","Wolf","Zebra"};
   ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
           android.R.layout.simple_dropdown_item_1line, list);
@@ -87,7 +87,6 @@ public class AnimalTitle extends Activity {
 
 			String output = Character.toUpperCase(animal.charAt(0)) + animal.substring(1);
 
-
 			if ( output.equals("Cornsnake"))
 			{
 				Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
@@ -103,13 +102,31 @@ public class AnimalTitle extends Activity {
 					startActivity(tii); 
 				}
 				if (!(output.equals("Rattlesnake"))){
-			Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
+					
+					if (output.equals("Seaturtle")){
+						Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
+						Intent tiii = new Intent(getApplicationContext(),SeaTurtle.class);
+						startActivity(tiii); 
+					}
+					if (!(output.equals("Seaturtle"))){
+						if (output.equals("Clownfish")){
+							Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
+							Intent tii = new Intent(getApplicationContext(),ClownFish.class);
+							startActivity(tii); 
+						} else
+						{
+							Toast.makeText(getApplicationContext(),"SUCCESS! " + output + " is in the app!", Toast.LENGTH_SHORT).show();
 
-		Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
+							Class<?> clazz = Class.forName("com.example.childfieldtrip."+output);
 
-			Intent i = new Intent(getApplicationContext(),clazz);
-			editText.setText("");
-		startActivity(i); 
+								Intent i = new Intent(getApplicationContext(),clazz);
+								editText.setText("");
+							startActivity(i); 
+						}
+						
+							
+					}
+
 				}
 		
 			}

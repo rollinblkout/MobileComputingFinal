@@ -79,6 +79,7 @@ android:layout_marginBottom="20dp"
         android:layout_marginBottom="5dp"
         android:background="@color/buttoncolor"
         android:gravity="center"
+        android:onClick="search"
        android:textColor="@color/buttontextcolor"
         android:text="@string/go"
 

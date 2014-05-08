@@ -10,7 +10,7 @@ Cat
 Chameleon
 Cheetah
 Chicken
-Clown Fish
+Clownfish
 Cornsnake
 Cow
 Coyote
@@ -56,7 +56,7 @@ Rattlesnake
 Reptiles
 Rodents
 Salmon
-Sea Turtle
+Seaturtle
 Seagull
 Shark
 Sheep

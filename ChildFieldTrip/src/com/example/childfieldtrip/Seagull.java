@@ -22,7 +22,7 @@ import android.widget.Toast;
 
 public class Seagull extends Activity {
 	private int currentImage = 0;
-	private int numImages = 3;
+	private int numImages = 4;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -124,13 +124,15 @@ public class Seagull extends Activity {
 		            switch (currentImage) {
 		            case 0:  imageI.setImageResource(R.drawable.seagull);
 		                     break;
-		            case 1: if (file.exists())
+		            case 1:  imageI.setImageResource(R.drawable.seagull2);
+                    break;
+		            case 2: if (file.exists())
 	            	{ imageI.setImageBitmap(initial); }
 		            else { imageI.setImageResource(R.drawable.seagull);
 		            currentImage = 0;
 		            }
 	 	            break;
-		            case 2: if (file2.exists())
+		            case 3: if (file2.exists())
 	            	{ imageI.setImageBitmap(init); }
 		            else { imageI.setImageResource(R.drawable.seagull);
 		            currentImage = 0;
