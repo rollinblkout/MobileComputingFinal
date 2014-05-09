@@ -26,12 +26,49 @@ public class Definitions extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-			switch (def.getCheckedItemPosition()){	
-			case 0:
-				Toast.makeText(getApplicationContext(),"Item click!", Toast.LENGTH_SHORT).show();
-			case 1:
-				Toast.makeText(getApplicationContext(),"Item click!", Toast.LENGTH_SHORT).show();
+				String[] items = { "Amphibian", "Canines","Carnivore", "Feline","Herbivore","Nocturnal","Mammal","Omnivore","Reptile","Rodent"};
+				if (items[position].equals("Amphibian")){
+					
+					Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+				}
+				if (items[position].equals("Canines")){
+					
+					Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
 			}
+				if (items[position].equals("Carnivore")){
+					
+					Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+			}
+if (items[position].equals("Feline")){
+					
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+			}
+if (items[position].equals("Herbivore")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+
+if (items[position].equals("Nocturnal")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+
+if (items[position].equals("Mammal")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+if (items[position].equals("Omnivore")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+if (items[position].equals("Reptile")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
+if (items[position].equals("Rodent")){
+	
+	Toast.makeText(getApplicationContext(),"Oops! You forgot to take the picture!", Toast.LENGTH_SHORT).show();
+}
 		}
 			
 	
