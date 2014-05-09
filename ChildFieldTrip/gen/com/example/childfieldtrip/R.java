@@ -35,6 +35,11 @@ public final class R {
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
@@ -287,94 +292,26 @@ public final class R {
         public static final int activity_zebra=0x7f030055;
     }
     public static final class menu {
-        public static final int alligator=0x7f090000;
-        public static final int amphibian=0x7f090001;
-        public static final int animal_title=0x7f090002;
-        public static final int aquatic=0x7f090003;
-        public static final int baboon=0x7f090004;
-        public static final int bear=0x7f090005;
-        public static final int birds=0x7f090006;
-        public static final int boar=0x7f090007;
-        public static final int buffalo=0x7f090008;
-        public static final int camera=0x7f090009;
-        public static final int canines=0x7f09000a;
-        public static final int capybara=0x7f09000b;
-        public static final int cat=0x7f09000c;
-        public static final int chameleon=0x7f09000d;
-        public static final int cheetah=0x7f09000e;
-        public static final int chicken=0x7f09000f;
-        public static final int clown_fish=0x7f090010;
-        public static final int corn_snake=0x7f090011;
-        public static final int cow=0x7f090012;
-        public static final int coyote=0x7f090013;
-        public static final int crab=0x7f090014;
-        public static final int crocodile=0x7f090015;
-        public static final int deer=0x7f090016;
-        public static final int definitions=0x7f090017;
-        public static final int dog=0x7f090018;
-        public static final int dolphin=0x7f090019;
-        public static final int domestic=0x7f09001a;
-        public static final int duck=0x7f09001b;
-        public static final int eagle=0x7f09001c;
-        public static final int elephant=0x7f09001d;
-        public static final int farm_animals=0x7f09001e;
-        public static final int felines=0x7f09001f;
-        public static final int ferret=0x7f090020;
-        public static final int fox=0x7f090021;
-        public static final int fresh_water=0x7f090022;
-        public static final int frog=0x7f090023;
-        public static final int gazelle=0x7f090024;
-        public static final int giraffe=0x7f090025;
-        public static final int goldfish=0x7f090026;
-        public static final int gorilla=0x7f090027;
-        public static final int groundhog=0x7f090028;
-        public static final int guess_image=0x7f090029;
-        public static final int guineapig=0x7f09002a;
-        public static final int hamster=0x7f09002b;
-        public static final int hippo=0x7f09002c;
-        public static final int horse=0x7f09002d;
-        public static final int hyena=0x7f09002e;
-        public static final int iguana=0x7f09002f;
-        public static final int image_guess=0x7f090030;
-        public static final int leopard=0x7f090031;
-        public static final int lion=0x7f090032;
-        public static final int lizard=0x7f090033;
-        public static final int lobster=0x7f090034;
-        public static final int main=0x7f090035;
-        public static final int meerkat=0x7f090036;
-        public static final int monkey=0x7f090037;
-        public static final int mouse=0x7f090038;
-        public static final int ocelot=0x7f090039;
-        public static final int octopus=0x7f09003a;
-        public static final int other_mammals=0x7f09003b;
-        public static final int panther=0x7f09003c;
-        public static final int parakeet=0x7f09003d;
-        public static final int parrot=0x7f09003e;
-        public static final int penguin=0x7f09003f;
-        public static final int pig=0x7f090040;
-        public static final int rabbit=0x7f090041;
-        public static final int rat=0x7f090042;
-        public static final int rattlesnamke=0x7f090043;
-        public static final int reptiles=0x7f090044;
-        public static final int rodents=0x7f090045;
-        public static final int salmon=0x7f090046;
-        public static final int sea_turtle=0x7f090047;
-        public static final int sea_water=0x7f090048;
-        public static final int seagull=0x7f090049;
-        public static final int shark=0x7f09004a;
-        public static final int sheep=0x7f09004b;
-        public static final int skunk=0x7f09004c;
-        public static final int spell_game=0x7f09004d;
-        public static final int tiger=0x7f09004e;
-        public static final int toad=0x7f09004f;
-        public static final int turtle=0x7f090050;
-        public static final int whale=0x7f090051;
-        public static final int wild_animals=0x7f090052;
-        public static final int wild_birds=0x7f090053;
-        public static final int wild_reptiles=0x7f090054;
-        public static final int wild_rodents=0x7f090055;
-        public static final int wolf=0x7f090056;
-        public static final int zebra=0x7f090057;
+        public static final int amphibian=0x7f090000;
+        public static final int animal_title=0x7f090001;
+        public static final int aquatic=0x7f090002;
+        public static final int birds=0x7f090003;
+        public static final int camera=0x7f090004;
+        public static final int canines=0x7f090005;
+        public static final int cat=0x7f090006;
+        public static final int dog=0x7f090007;
+        public static final int domestic=0x7f090008;
+        public static final int farm_animals=0x7f090009;
+        public static final int fresh_water=0x7f09000a;
+        public static final int guess_image=0x7f09000b;
+        public static final int leopard=0x7f09000c;
+        public static final int lizard=0x7f09000d;
+        public static final int main=0x7f09000e;
+        public static final int other_mammals=0x7f09000f;
+        public static final int wild_animals=0x7f090010;
+        public static final int wild_birds=0x7f090011;
+        public static final int wild_reptiles=0x7f090012;
+        public static final int wild_rodents=0x7f090013;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;

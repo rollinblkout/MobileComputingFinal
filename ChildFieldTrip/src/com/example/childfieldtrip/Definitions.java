@@ -5,15 +5,35 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class Definitions extends Activity {
-	
+	ListView def;
 	String[] definitions;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_definitions);
 		definitions = getResources().getStringArray(R.array.def);
+		def = (ListView) findViewById(R.id.lvdef);
+
+		def.setOnItemClickListener(new OnItemClickListener() {
+		
+			@Override
+			public void onItemClick(AdapterView<?> adapter, View v,
+					int position, long id) {
+				
+				Toast.makeText(getApplicationContext(),"Item click!", Toast.LENGTH_SHORT).show();
+	
+		}
+			
+	
+		
+	});
 	}
 
 	@Override
