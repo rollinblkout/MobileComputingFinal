@@ -26,9 +26,12 @@ public class Definitions extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> adapter, View v,
 					int position, long id) {
-				
+			switch (def.getCheckedItemPosition()){	
+			case 0:
 				Toast.makeText(getApplicationContext(),"Item click!", Toast.LENGTH_SHORT).show();
-	
+			case 1:
+				Toast.makeText(getApplicationContext(),"Item click!", Toast.LENGTH_SHORT).show();
+			}
 		}
 			
 	
