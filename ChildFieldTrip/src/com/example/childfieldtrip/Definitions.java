@@ -32,7 +32,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Amphibian")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("AMPHIBIAN")
-					.setMessage("Amphibians are ectothermic, tetrapod vertebrates of the class Amphibia.They inhabit a wide variety of habitats with most species living within terrestrial,fossorial, arboreal or freshwater aquatic ecosystems. ")
+					.setMessage("Amphibians are a species that live in freshwater ecosystems. They normally start off as larva living in the water and then later go into metamorphosis. They are like reptiles but they require water to breed. ")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -46,7 +46,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Canines")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("CANINES")
-					.setMessage("The Canidae are the biological family of carnivorans that includes domestic dogs, wolves, foxes, jackals, coyotes, and many other lesser known extant and extinct dog-like mammals. A member of this family is called a canid.")
+					.setMessage("Canines are a biological family made up of dogs, foxes, wolves and coyotes. They consist of other dog-like mammals as well.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -59,7 +59,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Carnivore")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("CARNIVORE")
-					.setMessage("A carnivore meaning 'meat eater' is an organism that derives its energy and nutrient requirements from a diet consisting mainly or exclusively of animal tissue, whether through predation or scavenging.")
+					.setMessage("Organism that eats meat.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -72,7 +72,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Feline")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("FELINE")
-					.setMessage("Felidae is the biological family of the cats; a member of this family is called a felid. The most familiar felid is the domestic cat.")
+					.setMessage("Felines are a family that consists of cat-like animals such as cats, cheetahs, and lions.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -85,7 +85,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Herbivore")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("HERBIVORE")
-					.setMessage("A herbivore is an animal anatomically and physiologically adapted to eating plant material, for example foliage, for the main component of its diet.")
+					.setMessage("Organisms that eat plants and not meat.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -98,7 +98,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Nocturnal")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("NOCTURNAL")
-					.setMessage("Nocturnal creatures generally have highly developed senses of hearing, smell, and specially adapted eyesight.")
+					.setMessage("Animals active during the night and that sleep during the day.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -111,7 +111,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Mammal")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("MAMMAL")
-					.setMessage("Mammals are a clade of endothermic amniotes distinguished from the reptiles and the birds by the possession of hair, three middle ear bones, mammary glands in females, and a neocortex (a region of the brain).")
+					.setMessage("Mammals are animals that have their brain regulate body temperature. The females always nurse their young with their milk.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -124,7 +124,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Omnivore")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("OMNIVORE")
-					.setMessage("An omnivore meaning 'all-eater' is an animal that can derive its energy and nutrients from a diet consisting of a variety of food sources that may include plants, animals, algae, fungi and select bacteria.")
+					.setMessage("An omnivore eats everything from plants to meat.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -137,7 +137,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Reptile")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("REPTILE")
-					.setMessage("Reptiles, the class Reptilia, are an evolutionary grade of animals, comprising today's turtles, crocodilians, snakes, lizards and tuatara, as well as many extinct groups.")
+					.setMessage("Reptiles consist of lizards, crocodiles, and turtles. They arecold blooded and their eggs have an extra membrane. Their skin has scales.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
@@ -150,7 +150,7 @@ public class Definitions extends Activity {
 				if (items[position].equals("Rodent")){
 					AlertDialog.Builder builder = new AlertDialog.Builder(Definitions.this);
 					builder.setTitle("RODENT")
-					.setMessage("Rodents are mammals of the order Rodentia, characterised by a single pair of continuously growing incisors in each of the upper and lower jaws that must be kept short by gnawing.")
+					.setMessage("Rodents are mammals that use sharp incisors to defend themselves and break into food. They are found in great numbers in many countries. Most rodents are tiny.")
 					.setCancelable(false)
 					.setNegativeButton("Close",new DialogInterface.OnClickListener() {
 						public void onClick(DialogInterface dialog, int id) {
