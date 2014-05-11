@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
-
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,8 +20,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class GuessImage extends Activity {
+public class GuessImage extends Activity{
 	List<String> animalsAL = new ArrayList<String>();
 	String animal="";
 	
@@ -60,12 +62,12 @@ public class GuessImage extends Activity {
 				String temp=guess.getText().toString();
 				if(temp.equalsIgnoreCase(animal)){
 					Log.d("ADebugTag", "Animal true: " + temp);
-					correct.setVisibility(View.VISIBLE);
+					showResultBox(true,animal);
 					next();
 				}
 				else{
 					Log.d("ADebugTag", "Animal False: " + temp);
-					incorrect.setVisibility(View.VISIBLE);	
+					showResultBox(false,animal);
 				}
 			}
 		});
@@ -107,6 +109,32 @@ public boolean onCreateOptionsMenu(Menu menu) {
 	    inflater.inflate(R.menu.birds, menu);
 	    return super.onCreateOptionsMenu(menu);
 }
+
+
+private void showResultBox(boolean winner , String animalanswer){
+	AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+	dialogBuilder.setTitle("Game Result");
+	dialogBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+		
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			Toast.makeText(getApplicationContext(), "You clicked OK", Toast.LENGTH_SHORT).show();
+		}
+	});
+	if (winner==true){
+		dialogBuilder.setMessage("Your answer of " +animalanswer+ " "+ "was Correct!");
+	}
+	else{
+		dialogBuilder.setMessage("You are incorrect, "+animalanswer + " was the correct answer.");
+	}
+	AlertDialog alertDialog = dialogBuilder.create();
+	alertDialog.show();
+}
+
+
+
+
+
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
     // Handle presses on the action bar items
