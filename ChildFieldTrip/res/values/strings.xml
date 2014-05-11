@@ -226,12 +226,12 @@
     <string name="horseinfo"> Horses are mammals that have evolved from around 50 million ears from being small multi-toed creatures into what they are today. They are used in many human activities such as police work, sports, agriculture, and riding. They are herbivores. </string>
     <string name="mouseinfo">Mice are small mammals. They are largely herbivores that eat grains. They are nocturnal animals. As well as being popular pets they are used as test subjects in labatories.</string>
     <string name="parakeetinfo">They are a subspecies of parrot. The ringnecked parakeet is the type native to Africa and Asia. This species is popular as a pet. </string>
-    <string name="parrotinfo">Parrots are found in tropical and subtropical regions. They are divided into three superfamilies: true parrots, New Zealand parrots, and cockatoos.  South America and Australasia have the greatest diversity of parrots. Their diets consists of seeds, fruit, nuts, buds, and other parts of plants. A few eat animals.</string>
+    <string name="parrotinfo">Parrots are found in tropical and subtropical regions. South America and Australasia have the greatest diversity of parrots. Their diets consists of seeds, fruit, nuts, buds, and other parts of plants. A few eat animals.</string>
     <string name="piginfo">Pigs ancestors are the common Eurasian wild boar. Baby pigs are called piglets. They are omnivores and like to be social.  They are commonly raised on farms for pork, ham, and even leather. </string>
-    <string name="rabbitinfo">Rabbits are mammals and found in many places over the world. A male rabbit is reffered to as a buck while the female as a doe. However a baby rabbit is called a kitten.  They live in meadows, woods, deserts, and grasslands. They are most active dawn and dusk and are herbivores. </string>
+    <string name="rabbitinfo">A male rabbit is reffered to as a buck while the female as a doe. However a baby rabbit is called a kitten.  They live in meadows, woods, deserts, and grasslands. They are most active dawn and dusk and are herbivores. </string>
     <string name="ratinfo">Rats are often considered pests. However they have an ability to learn and are often kept as pets. They are often used in labatories.</string>
     <string name="sheepinfo">They are licestock mammals. They likely descended from mouflon in Europe and Asia. They are raised for meat, milk, and fleece. Their wool is the most used animal fiber.</string>
-    <string name="turtleinfo">Turtles have a bony(cartilaginous) shell that is formed from their ribs. This shell acts like a protective shell. They are amniotes, which means they breathe air, and do not go underwater to lay eggs, but live around water.  They feed on aquatic plants and sometimes insects. </string>
+    <string name="turtleinfo">Turtles have a bony shell that is formed from their ribs. This shell acts like a protective shell. They are amniotes, which means they breathe air, and do not go underwater to lay eggs, but live around water.  They feed on aquatic plants and sometimes insects. </string>
     <string name="title_activity_spell_game">SpellGame</string>
     <string name="title_activity_image_guess">ImageGuess</string>
     <string name="title_activity_guess_image">GuessImage</string>
@@ -329,7 +329,7 @@
     <string name="seagull_desc">Seagulls are medium to large bird. They often are grey and white. Seagulls make harsh squawking calls. They have long bills, and webbed feet.</string>
     <string name="title_activity_chicken">Chicken</string>
     <string name="chicken">Chicken</string>
-    <string name="chicken_desc"></string>
+    <string name="chicken_desc">Chickens are the most populated bird species in the world.They are omnivores and produce eggs that we eat. Male chickens are called roosters and females hens. </string>
     <string name="title_activity_goldfish">Goldfish</string>
     <string name="goldfish">Goldfish</string>
     <string name="goldfish_desc">The first goldfish was domesticated in China. They vary in size and body shape. There are many varities of goldfish.</string>
@@ -344,7 +344,7 @@
     <string name="whale_desc">Whales are mammals. The blue whale is the largest animal known to have ever exist. It can be up to 98 ft! The bowhead whale can live over a century. Some whales eat plankton. </string>
     <string name="title_activity_clown_fish">Clown Fish</string>
     <string name="clownfish">Clown Fish</string>
-    <string name="clownfish_desc">The Clown Fish has thirty different species discovered so far. Clownfish come in colors of yellow, orange, reddish or blackish color. </string>
+    <string name="clownfish_desc">The Clown Fish has thirty different species discovered so far. Clownfish come in colors of yellow, orange, reddish or blackish color. They are omnivores and live in anemones. </string>
     <string name="title_activity_lobster">Lobster</string>
     <string name="lobster">Lobster</string>
     <string name="lobster_desc">They are invertebrate creatures and are protected by their exoskeleton. They mult in order to grow and have ten legs they walk on. They can live up to 60 years old.</string>

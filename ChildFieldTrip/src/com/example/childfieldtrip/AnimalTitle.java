@@ -130,13 +130,14 @@ public class AnimalTitle extends Activity {
 				}
 		
 			}
-
+			
 		}
 		else
 		{
 			Toast.makeText(getApplicationContext(),"Oops! " + animal2 + " is not in the app!", Toast.LENGTH_SHORT).show();
-			editText.setText("");
+			
 		}
+		editText.setText("");
 	}
  View.OnClickListener aquatic = new View.OnClickListener() {
 

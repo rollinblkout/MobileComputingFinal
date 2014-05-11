@@ -69,6 +69,7 @@ public class GuessImage extends Activity{
 					Log.d("ADebugTag", "Animal False: " + temp);
 					showResultBox(false,animal);
 				}
+				guess.setText("");
 			}
 		});
 		
@@ -100,6 +101,8 @@ public class GuessImage extends Activity{
 			next();
 		}
 		Log.d("ADebugTag", "Value: " + animal);
+		final EditText guess = (EditText) findViewById(R.id.editText1);
+		guess.setText("");
 	}
 
 @Override
@@ -118,7 +121,7 @@ private void showResultBox(boolean winner , String animalanswer){
 		
 		@Override
 		public void onClick(DialogInterface dialog, int which) {
-			Toast.makeText(getApplicationContext(), "You clicked OK", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "Guess again!", Toast.LENGTH_SHORT).show();
 		}
 	});
 	if (winner==true){
