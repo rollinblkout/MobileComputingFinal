@@ -63,13 +63,16 @@ public class GuessImage extends Activity{
 				if(temp.equalsIgnoreCase(animal)){
 					Log.d("ADebugTag", "Animal true: " + temp);
 					showResultBox(true,animal);
+					guess.setText(" ");
 					next();
+					
 				}
 				else{
 					Log.d("ADebugTag", "Animal False: " + temp);
 					showResultBox(false,animal);
+					guess.setText(" ");
 				}
-				guess.setText("");
+				
 			}
 		});
 		
@@ -130,6 +133,7 @@ private void showResultBox(boolean winner , String animalanswer){
 	else{
 		dialogBuilder.setMessage("You are incorrect, "+animalanswer + " was the correct answer.");
 	}
+	
 	AlertDialog alertDialog = dialogBuilder.create();
 	alertDialog.show();
 }

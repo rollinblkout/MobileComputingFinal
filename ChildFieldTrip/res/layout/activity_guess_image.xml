@@ -17,34 +17,22 @@
         android:paddingBottom="10dp"
         android:layout_marginBottom="20dp"
         android:textStyle="bold"
-                android:textColor="@color/textcolor"
+        android:textColor="@color/textcolor"
         android:textSize="16sp"
         android:text="Enter an animal name to guess!" />
 
     <Button
         android:id="@+id/button1"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_alignParentBottom="true"
-          android:background="@color/buttoncolor"
         android:layout_marginBottom="60dp"
         android:layout_marginLeft="32dp"
-        android:textColor="@color/buttontextcolor"
-        android:text="Check" />
-
-    <Button
-        android:id="@+id/button2"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-          android:background="@color/buttoncolor"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/button1"
-        android:layout_marginRight="52dp"
-        android:textColor="@color/buttontextcolor"
-        android:text="Next" />
+        android:background="@color/buttoncolor"
+        android:text="Guess"
+        android:textColor="@color/buttontextcolor" />
 
     <TextView
         android:id="@+id/textView3"
@@ -87,5 +75,17 @@
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY"
         android:src="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/textView3"
+        android:background="@color/buttoncolor"
+        android:text="I dont know"
+        android:textColor="@color/buttontextcolor" />
 
 </RelativeLayout>
